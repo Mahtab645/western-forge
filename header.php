@@ -28,17 +28,16 @@ if ($baseUrl === '.' || $baseUrl === '\\') {
         </a>
 
         <nav class="header-nav-wrap navbar navbar-expand-lg p-0">
-            <div class="header-social">
-                <a href="https://www.linkedin.com/company/western-forge-&amp;-flange/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <div class="header-topbar">
+                <a class="header-linkedin" href="https://www.linkedin.com/company/western-forge-&amp;-flange/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <img src="<?php echo $baseUrl; ?>/images/linkedin.svg" alt="LinkedIn">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse flex-grow-0" id="mainNav">
+            <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="header-menu navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
