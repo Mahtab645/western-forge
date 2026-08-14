@@ -57,7 +57,7 @@ $contactHref = $baseUrl . '/contact.php';
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Custom Forging</a>
+                        <a class="nav-link<?php echo $currentPage === 'custom-forging.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/custom-forging.php">Custom Forging</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link<?php echo $currentPage === 'quality-certifications.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a>

@@ -33,7 +33,7 @@
                 <ul class="footer-links">
                     <li><a href="<?php echo $baseUrl; ?>/index.php">Home</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/index.php#products">Products</a></li>
-                    <li><a href="<?php echo $baseUrl; ?>/index.php#custom-forging">Custom Forging</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/custom-forging.php">Custom Forging</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Resources</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Blog</a></li>
                     <li><a href="#">Terms of Use</a></li>

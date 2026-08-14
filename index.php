@@ -178,7 +178,7 @@ $startIndex = 7;
             foreach ($forgingCards as $card):
             ?>
             <div class="col-md-6 col-lg-4">
-                <a class="forging-card" href="#custom-forging">
+                <a class="forging-card" href="<?php echo $baseUrl; ?>/custom-forging.php">
                     <span class="forging-card-arrow" aria-hidden="true">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                             <path d="M7 17 17 7M9 7h8v8" stroke="#e0393e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,7 +203,7 @@ $startIndex = 7;
             <div class="col-md-6 col-lg-8">
                 <div class="forging-cta">
                     <h3>Learn more about Custom Forgings</h3>
-                    <a class="btn-view-products" href="#custom-forging">Learn More</a>
+                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/custom-forging.php">Learn More</a>
                 </div>
             </div>
         </div>
