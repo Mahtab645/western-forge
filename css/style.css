@@ -931,3 +931,658 @@ a {
     font-size: 30px;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Custom forging solutions
+   ------------------------------------------------------------------------- */
+
+.forging-section {
+  background: var(--wf-white);
+  padding: 88px 0 100px;
+}
+
+.forging-intro {
+  max-width: 920px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.forging-intro h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 22px;
+}
+
+.forging-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0;
+}
+
+.forging-card {
+  position: relative;
+  display: block;
+  height: 100%;
+  color: var(--wf-black);
+  text-decoration: none;
+}
+
+.forging-card-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.forging-card-inner {
+  background: #eaeced;
+  clip-path: polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%);
+  min-height: 280px;
+  height: 100%;
+  padding: 40px 28px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.forging-card-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.forging-card-default img {
+  display: block;
+  width: auto;
+  height: 88px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.forging-card-default h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--wf-black);
+}
+
+.forging-card-hover {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--wf-white);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 240px;
+}
+
+.forging-card:hover .forging-card-inner,
+.forging-card:focus .forging-card-inner {
+  background: var(--wf-red);
+}
+
+.forging-card:hover .forging-card-default,
+.forging-card:focus .forging-card-default {
+  display: none;
+}
+
+.forging-card:hover .forging-card-hover,
+.forging-card:focus .forging-card-hover {
+  display: flex;
+}
+
+.forging-card:hover .forging-card-arrow path,
+.forging-card:focus .forging-card-arrow path {
+  stroke: #fff;
+}
+
+.forging-cta {
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+}
+
+.forging-cta h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-black);
+  margin: 0 0 24px;
+  max-width: 360px;
+  line-height: 1.25;
+}
+
+@media (max-width: 767.98px) {
+  .forging-section {
+    padding: 56px 0 72px;
+  }
+
+  .forging-intro h2 {
+    font-size: 30px;
+  }
+
+  .forging-card-inner,
+  .forging-cta {
+    min-height: 240px;
+  }
+
+  .forging-cta h3 {
+    font-size: 26px;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Material grades
+   ------------------------------------------------------------------------- */
+
+.materials-section {
+  position: relative;
+  padding: 96px 0;
+  background-color: #f4f4f4;
+  background-image: url("../images/bg-flanges.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.materials-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.materials-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.materials-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.materials-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--wf-black);
+  margin: 0 0 16px;
+}
+
+.materials-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0;
+  max-width: 380px;
+}
+
+.materials-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.materials-list li {
+  position: relative;
+  padding: 0 0 16px 44px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--wf-black);
+}
+
+.materials-list li:last-child {
+  padding-bottom: 0;
+}
+
+.materials-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 26px;
+  height: 26px;
+  background: var(--wf-red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 12.5 9.5 17 19 7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+}
+
+.materials-list strong {
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .materials-section {
+    padding: 56px 0;
+  }
+
+  .materials-section h2 {
+    font-size: 30px;
+  }
+
+  .materials-section h3 {
+    font-size: 22px;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Industries
+   ------------------------------------------------------------------------- */
+
+.industries-section {
+  background: #1a1a1a;
+  padding: 88px 0 96px;
+  color: var(--wf-white);
+}
+
+.industries-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-white);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.industries-lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--wf-white);
+  max-width: 920px;
+  margin: 0 0 36px;
+}
+
+.industries-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 18px;
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  max-width: 860px;
+}
+
+.industries-list li {
+  position: relative;
+  padding-left: 44px;
+}
+
+.industries-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  background: var(--wf-red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 12.5 9.5 17 19 7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+}
+
+.industries-list a {
+  color: var(--wf-white);
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.industries-list a:hover {
+  color: var(--wf-red);
+}
+
+.industries-section .btn-view-products {
+  color: var(--wf-white);
+}
+
+@media (max-width: 767.98px) {
+  .industries-section {
+    padding: 56px 0 64px;
+  }
+
+  .industries-section h2 {
+    font-size: 30px;
+  }
+
+  .industries-list {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Quality
+   ------------------------------------------------------------------------- */
+
+.quality-section {
+  background: var(--wf-white);
+  padding: 96px 0;
+}
+
+.quality-media {
+  position: relative;
+  margin: 28px 0 0 28px;
+}
+
+.quality-media-accent {
+  position: absolute;
+  top: -28px;
+  left: -28px;
+  width: 82%;
+  height: 82%;
+  background: rgba(224, 57, 62, 0.16);
+  clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 70px, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+.quality-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%);
+}
+
+.quality-copy h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.quality-copy p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0 0 28px;
+}
+
+@media (max-width: 767.98px) {
+  .quality-section {
+    padding: 56px 0;
+  }
+
+  .quality-media {
+    margin: 20px 0 0 20px;
+  }
+
+  .quality-copy h2 {
+    font-size: 30px;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Helpful resources
+   ------------------------------------------------------------------------- */
+
+.resources-section {
+  background: var(--wf-white);
+  padding: 88px 0 100px;
+}
+
+.resources-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.resources-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0;
+  max-width: 520px;
+}
+
+.resource-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resource-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border: 1px solid var(--wf-red);
+  color: var(--wf-black);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resource-links a span {
+  font-weight: 400;
+  margin-left: 16px;
+  transition: transform 0.2s ease;
+}
+
+.resource-links a:hover,
+.resource-links a:focus {
+  background: var(--wf-red);
+  color: var(--wf-white);
+}
+
+.resource-links a:hover span,
+.resource-links a:focus span {
+  transform: translateX(6px);
+}
+
+@media (max-width: 767.98px) {
+  .resources-section {
+    padding: 56px 0 64px;
+  }
+
+  .resources-section h2 {
+    font-size: 30px;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Ready to get started CTA
+   ------------------------------------------------------------------------- */
+
+.cta-section {
+  position: relative;
+  padding: 110px 0;
+  background-color: #1a1a1a;
+  background-image: url("../images/bg-flanges.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 18, 18, 0.72);
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-box {
+  background: var(--wf-white);
+  padding: 56px 48px;
+}
+
+.cta-box h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.cta-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0 0 28px;
+}
+
+@media (max-width: 767.98px) {
+  .cta-section {
+    padding: 64px 0;
+  }
+
+  .cta-box {
+    padding: 36px 24px;
+  }
+
+  .cta-box h2 {
+    font-size: 30px;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------------------- */
+
+.site-footer {
+  background: #1a1a1a;
+  color: var(--wf-white);
+  padding: 72px 0 28px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.footer-logo img {
+  display: block;
+  width: 220px;
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+}
+
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-icon {
+  flex: 0 0 16px;
+  margin-top: 3px;
+}
+
+.footer-contact a {
+  color: var(--wf-white);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--wf-red);
+}
+
+.footer-links {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--wf-white);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: var(--wf-red);
+}
+
+.footer-brands-title {
+  color: var(--wf-white);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0 14px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 36px 0 20px;
+}
+
+.footer-social a {
+  display: flex;
+  line-height: 0;
+}
+
+.footer-social img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-rule {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.85);
+  margin: 0 0 18px;
+  opacity: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a,
+.footer-bottom p {
+  color: var(--wf-white);
+  font-size: 14px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: var(--wf-red);
+}
+
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding: 48px 0 24px;
+  }
+
+  .footer-logo img {
+    width: 180px;
+  }
+}

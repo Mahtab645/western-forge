@@ -160,6 +160,157 @@ $startIndex = 7;
     </div>
 </section>
 
+<section class="forging-section" id="custom-forging">
+    <div class="container">
+        <div class="forging-intro">
+            <h2>Custom Forging Solutions</h2>
+            <p>We’re ready to forge parts that meet your most exacting needs. These include specialty engineered products, from applications as simple as a water treatment plant to prototypes for aerospace rockets and nuclear submarines for the Navy. We work with a variety of advanced corrosion- and heat-resistant alloys, and can provide expedited turnarounds to meet your demands.</p>
+        </div>
+
+        <div class="row g-4 forging-grid">
+            <?php
+            $forgingCards = [
+                ['name' => 'Blocks', 'file' => 'icon-blocks.png', 'hover' => 'up to 2,500 lbs in weight'],
+                ['name' => 'Rings', 'file' => 'icon-rings.png', 'hover' => 'up to 75″ in diameter'],
+                ['name' => 'Bars', 'file' => 'icon-bars.png', 'hover' => 'up to 48″ in length'],
+                ['name' => 'Discs', 'file' => 'icon-discs.png', 'hover' => 'up to 48″ in diameter'],
+            ];
+            foreach ($forgingCards as $card):
+            ?>
+            <div class="col-md-6 col-lg-4">
+                <a class="forging-card" href="#custom-forging">
+                    <span class="forging-card-arrow" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17 17 7M9 7h8v8" stroke="#e0393e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <div class="forging-card-inner">
+                        <div class="forging-card-default">
+                            <img src="<?php echo $baseUrl; ?>/images/<?php echo htmlspecialchars($card['file'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($card['name'], ENT_QUOTES, 'UTF-8'); ?>">
+                            <h3><?php echo htmlspecialchars($card['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                        </div>
+                        <div class="forging-card-hover">
+                            <span><?php echo htmlspecialchars($card['hover'], ENT_QUOTES, 'UTF-8'); ?></span>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <?php endforeach; ?>
+
+            <div class="col-md-6 col-lg-8">
+                <div class="forging-cta">
+                    <h3>Learn more about Custom Forgings</h3>
+                    <a class="btn-view-products" href="#custom-forging">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="materials-section">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+                <h2>Material Grades</h2>
+                <h3>80+ Metals In Stock</h3>
+                <p>Take advantage of our inventory of metals including stainless steel and high nickel alloys.</p>
+            </div>
+            <div class="col-lg-7">
+                <ul class="materials-list">
+                    <li><strong>Hastelloy</strong> – C276, C22, B3, X, G30, G35</li>
+                    <li><strong>Alloy</strong> – 400, 600, 601, 625, 800H/HT, 825, 904L, A20</li>
+                    <li><strong>Duplex &amp; Super Duplex</strong> – 2205, 2507, 255</li>
+                    <li><strong>Nickel</strong> – 200, 201</li>
+                    <li><strong>Titanium</strong> – Grades 2, 7, and 12</li>
+                    <li><strong>Aluminum</strong> – 6061, 3003, 5083, 5086</li>
+                    <li><strong>Copper Nickel</strong> – 70/30, 90/10</li>
+                    <li><strong>Stainless</strong> – 304/H, 310, 316/H, 317, 321/H, 347/H</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="industries-section" id="industries">
+    <div class="container">
+        <h2>Industries We Support</h2>
+        <p class="industries-lead">Companies that require high-performance forged products trust Western Forge &amp; Flange to provide the highest level of engineered components to meet a multitude of applications across a wide spectrum of industries.</p>
+        <ul class="industries-list">
+            <li><a href="#industries">Petrochemical</a></li>
+            <li><a href="#industries">Liquefied Natural Gas</a></li>
+            <li><a href="#industries">Oil and Gas</a></li>
+            <li><a href="#industries">Renewable Fuels</a></li>
+            <li><a href="#industries">Nuclear</a></li>
+            <li><a href="#industries">Power Generation</a></li>
+            <li><a href="#industries">Pulp and Paper</a></li>
+            <li><a href="#industries">Marine and Shipbuilding</a></li>
+            <li><a href="#industries">Pharmaceuticals</a></li>
+            <li><a href="#industries">Agriculture</a></li>
+            <li><a href="#industries">Mining</a></li>
+            <li><a href="#industries">Defense</a></li>
+        </ul>
+        <a class="btn-view-products" href="#industries">Explore Industries</a>
+    </div>
+</section>
+
+<section class="quality-section" id="quality">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="quality-media">
+                    <span class="quality-media-accent" aria-hidden="true"></span>
+                    <img src="<?php echo $baseUrl; ?>/images/quality-testing.jpg" alt="Quality testing at Western Forge &amp; Flange">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="quality-copy">
+                    <h2>Quality You Can Trust</h2>
+                    <p>Our services are backed by a variety of certifications, attesting to the quality and precision of our work. Western Forge &amp; Flange is the holder of approvals from ISO, PED, PER, and more, as well as Canadian nuclear and non-nuclear standards, alongside federal and military approvals. Our compliance documentation is downloadable and ready for your inspection.</p>
+                    <a class="btn-view-products" href="#quality">View Certifications</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="resources-section" id="resources">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2>Helpful Resources</h2>
+                <p>To make sure your needs perfectly align with our capabilities, we offer a number of technical guides and informative resources. Checking these makes specifying easy for your team.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="resource-links">
+                    <a href="#resources">Flange Dimensions <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#resources">Dimensional Tolerances <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#resources">Forging 101 <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#resources">See All Resources <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section" id="contact">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <div class="cta-box">
+                    <h2>Ready To Get Started?</h2>
+                    <p>Once you reach out to Western Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
+                    <a class="btn-view-products" href="#contact">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include __DIR__ . '/footer.php'; ?>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
     (function () {
