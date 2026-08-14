@@ -98,6 +98,91 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="forging-benefits">
+    <div class="container">
+        <h2>Benefits of Using a Forged Flange</h2>
+        <div class="row forging-benefits-copy">
+            <div class="col-lg-6">
+                <p>The process of open die forging has long been used to ensure strength, toughness, reliability, and the highest quality in flange manufacturing. Today, with greater demands being made in operating temperatures, loads, and stresses, the reliability of the metal and toughness has become increasingly critical. With the advancements of modern forging and machining, flanges in high grade alloys have excellent tolerance capabilities, superior corrosion resistance, and higher efficiency. Working the material at elevated temperatures achieves recrystallization and grain refinement, which results in greater metallurgical soundness and improved mechanical properties.</p>
+            </div>
+            <div class="col-lg-6">
+                <p>As seen in figure two, properly developed grain flow in forgings closely follows the outline of the flange. In contrast, bar stock and plate have unidirectional grain flow. Any changes in shape will cut the flow lines, exposing grain ends, and render the flange more susceptible to fatigue and corrosion. In addition, because forgings are designed to approximate final part shape, we can make better use of material than parts machined from bar stock or plate. Finally, forging eliminates internal gas pockets and voids in the material that could cause unexpected failure under stress or impact and further increases chemical uniformity throughout the flange.</p>
+            </div>
+        </div>
+        <div class="row forging-benefits-diagrams">
+            <div class="col-md-4">
+                <div class="forging-benefits-item">
+                    <img src="<?php echo $baseUrl; ?>/images/forging-diag-casting.png" alt="Casting grain structure">
+                    <h3>Casting</h3>
+                    <p>No grain flow</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="forging-benefits-item">
+                    <img src="<?php echo $baseUrl; ?>/images/forging-diag-bar-stock.png" alt="Bar stock grain structure">
+                    <h3>Bar Stock</h3>
+                    <p>Grain flow broken<br>by machining</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="forging-benefits-item">
+                    <img src="<?php echo $baseUrl; ?>/images/forging-diag-forging.png" alt="Forging grain structure">
+                    <h3>Forging</h3>
+                    <p>True grain flow</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="forging-rough">
+    <div class="container">
+        <h2>Rough Forged vs Rough Machined</h2>
+        <div class="row align-items-center g-5 forging-rough-row">
+            <div class="col-lg-6">
+                <div class="about-who-copy">
+                    <h3>Rough Forgings</h3>
+                    <p>Western Forge &amp; Flange offers rough forgings in a multitude of shapes and sizes for customers to machine into various parts and components outside of flanges. Every rough forging comes with a &ldquo;machining allowance&rdquo; or &ldquo;forging envelope&rdquo; which refers to the amount of stock left on the surface of the forging to be removed by subsequent machining. Depending on the material grade and size of the forging, the envelope will typically range from &frac12;&quot; to 2&quot; (all over) of excess stock to protect the finishing dimensions provided by the customer. One of the main differences between rough forgings and rough machined forgings is that there is not an exact tolerance. As a manufacturer we cannot determine exactly how much overage there will be on the parts, although we try and get as close as possible to the finished dimensions.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-who-media forging-flange-media">
+                    <span class="about-who-media-accent" aria-hidden="true"></span>
+                    <img src="<?php echo $baseUrl; ?>/images/forging-rough-heat.jpg" alt="Hot forging in process">
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center g-5 forging-rough-row">
+            <div class="col-lg-6">
+                <div class="about-who-media forging-flange-media">
+                    <span class="about-who-media-accent" aria-hidden="true"></span>
+                    <img src="<?php echo $baseUrl; ?>/images/forging-rough-machined.jpg" alt="Machining a forging">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-who-copy">
+                    <h3>Rough Machined Forgings</h3>
+                    <p>Often, the customer requests an initial machine pass to remove the top layer of flash or scale that forms during the forging process. Taking off the excess material helps create a more compatible surface (most notably the OD) for our customers equipment, and it gives us the ability to drill out the ID of a cylinder that would otherwise be forged solid. This reduces the customers manufacturing and machining time by reducing heavy cuts and simultaneously decreases transportation costs. When a rough machined forging is quoted there is an agreed upon tolerance between the manufacturer and the customer. This helps eliminate any of the unknown excess dimensions as stated above with the rough forgings. Rough Machined tolerances can be as lenient as &frac12;&quot; but can get as close as 1/32&quot; on all dimensions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <div class="cta-box">
+                    <h2>Ready To Get Started?</h2>
+                    <p>Once you reach out to Western Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
+                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>
 </body>
 </html>

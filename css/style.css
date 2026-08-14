@@ -604,6 +604,31 @@ a {
   max-width: 720px;
 }
 
+.quality-hero {
+  min-height: 495px;
+  background-image: url("../images/quality-hero.jpg");
+  background-position: 67% 50%;
+}
+
+.quality-hero .page-hero-overlay {
+  background: #16171a;
+  opacity: 0.55;
+}
+
+.quality-hero .page-hero-content {
+  max-width: 720px;
+}
+
+.quality-intro {
+  padding: 100px 0;
+}
+
+@media (max-width: 767.98px) {
+  .quality-intro {
+    padding: 56px 0;
+  }
+}
+
 .forging-flange {
   background: var(--wf-white);
   padding: 72px 0 96px;
@@ -724,6 +749,139 @@ a {
 
   .forging-quote-lead p {
     font-size: 20px;
+  }
+}
+
+.forging-benefits {
+  background: var(--wf-gray);
+  padding: 100px 0;
+}
+
+.forging-benefits h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.forging-benefits-copy {
+  --bs-gutter-x: 27px;
+  --bs-gutter-y: 24px;
+}
+
+.forging-benefits-copy p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--wf-black);
+  margin: 0;
+}
+
+.forging-benefits-diagrams {
+  --bs-gutter-x: 27px;
+  --bs-gutter-y: 32px;
+  margin-top: 80px;
+}
+
+.forging-benefits-item {
+  text-align: center;
+}
+
+.forging-benefits-item img {
+  display: block;
+  width: 234px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.forging-benefits-item h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.4;
+  margin: 27px 0 0;
+}
+
+.forging-benefits-item p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--wf-black);
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .forging-benefits {
+    padding: 56px 0;
+  }
+
+  .forging-benefits h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .forging-benefits-diagrams {
+    margin-top: 48px;
+  }
+
+  .forging-benefits-item h3 {
+    font-size: 26px;
+    margin-top: 16px;
+  }
+}
+
+.forging-rough {
+  background: var(--wf-white);
+  padding: 100px 0 120px;
+}
+
+@media (min-width: 768px) {
+  .forging-rough {
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 89.5% 100%, 0 100%);
+  }
+}
+
+.forging-rough h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0;
+}
+
+.forging-rough-row {
+  margin-top: 80px;
+}
+
+.forging-rough .about-who-copy h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 767.98px) {
+  .forging-rough {
+    padding: 56px 0 72px;
+  }
+
+  .forging-rough h2 {
+    font-size: 30px;
+  }
+
+  .forging-rough-row {
+    margin-top: 40px;
+  }
+
+  .forging-rough .about-who-copy h3 {
+    font-size: 26px;
   }
 }
 

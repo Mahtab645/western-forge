@@ -269,7 +269,7 @@ $startIndex = 7;
                 <div class="quality-copy">
                     <h2>Quality You Can Trust</h2>
                     <p>Our services are backed by a variety of certifications, attesting to the quality and precision of our work. Western Forge &amp; Flange is the holder of approvals from ISO, PED, PER, and more, as well as Canadian nuclear and non-nuclear standards, alongside federal and military approvals. Our compliance documentation is downloadable and ready for your inspection.</p>
-                    <a class="btn-view-products" href="#quality">View Certifications</a>
+                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/quality-certifications.php">View Certifications</a>
                 </div>
             </div>
         </div>

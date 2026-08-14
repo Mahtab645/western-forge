@@ -60,7 +60,7 @@ $contactHref = $baseUrl . '/contact.php';
                         <a class="nav-link" href="#">Custom Forging</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quality &amp; Certifications</a>
+                        <a class="nav-link<?php echo $currentPage === 'quality-certifications.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
