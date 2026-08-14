@@ -80,6 +80,86 @@ $startIndex = 7;
     </div>
 </section>
 
+<section class="products-explore">
+    <div class="container">
+        <div class="products-explore-intro">
+            <h2>Explore Our Products and Capabilities</h2>
+            <p>At Western Forge &amp; Flange, we provide single-run and multiple-run flanges and forged shapes up to 2,500 pounds, serving a global client base across industries and functions. Our U.S. materials-sourcing and inspection processes are designed to deliver reliable quality.</p>
+            <p>This includes a diverse range of flanges: weld neck, slip-on, blind, socket weld, threaded, lap joint, stub end, studding outlet, long weld neck, and orifice set. We can also produce specialized parts to suit your measurements.</p>
+            <h3>Flanges</h3>
+        </div>
+
+        <div class="row g-4 product-card-grid">
+            <?php
+            $productCards = [
+                ['label' => 'Weld Neck Flanges', 'file' => 'flange-weld-neck.webp'],
+                ['label' => 'Slip-on Flanges', 'file' => 'flange-slip-on.webp'],
+                ['label' => 'Blind Flanges', 'file' => 'flange-blind.webp'],
+                ['label' => 'Socket Weld Flanges', 'file' => 'flange-socket-weld.webp'],
+                ['label' => 'Lap Joint Flanges', 'file' => 'flange-lap-joint.webp'],
+                ['label' => 'Stub Ends', 'file' => 'flange-stubb-end.webp'],
+                ['label' => 'Studding Outlet Flanges', 'file' => 'flange-studding-outlet.png'],
+                ['label' => 'Long Weld Neck Flanges', 'file' => 'flange-long-weld-neck.webp'],
+                ['label' => 'Orifice Sets', 'file' => 'flange-orifice.png'],
+            ];
+            foreach ($productCards as $i => $card) {
+                $path = __DIR__ . '/images/' . $card['file'];
+                if (!is_file($path)) {
+                    $alt = preg_replace('/\.(webp|png)$/', '', $card['file']);
+                    if (is_file(__DIR__ . '/images/' . $alt . '.png')) {
+                        $productCards[$i]['file'] = $alt . '.png';
+                    } elseif (is_file(__DIR__ . '/images/' . $alt . '.webp')) {
+                        $productCards[$i]['file'] = $alt . '.webp';
+                    }
+                }
+            }
+            foreach ($productCards as $card):
+            ?>
+            <div class="col-md-6 col-lg-4">
+                <a class="product-card" href="#products">
+                    <span class="product-card-arrow" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17 17 7M9 7h8v8" stroke="#e0393e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <div class="product-card-inner">
+                        <img src="<?php echo $baseUrl; ?>/images/<?php echo htmlspecialchars($card['file'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($card['label'], ENT_QUOTES, 'UTF-8'); ?>">
+                        <h4><?php echo htmlspecialchars($card['label'], ENT_QUOTES, 'UTF-8'); ?></h4>
+                    </div>
+                </a>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="text-center">
+            <a class="btn-view-products" href="#products">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<section class="trust-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2>Why Our Customers Trust Us</h2>
+                <p class="trust-lead">Companies across the world feel confident coming to Western Forge &amp; Flange with their most demanding needs. They know they can count on our experts and facilities to forge reliable products that meet exacting specifications.</p>
+                <h3>We offer:</h3>
+                <ul class="trust-list">
+                    <li>Rush capabilities, with quotes in minutes and a five-day emergency turnaround time.</li>
+                    <li>Experience and know-how built over 80+ years in business.</li>
+                    <li>A lineup of U.S.-sourced stainless and exotic alloys.</li>
+                    <li>Quality program that has been proven with a wide variety of certifications, from ISO to the most stringent nuclear certifications in the industry.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="ratio ratio-16x9 trust-video">
+                    <iframe src="https://www.youtube.com/embed/aiH00reL7mc" title="Western Forge and Flange - High Nickel Alloys" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
     (function () {
