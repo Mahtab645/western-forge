@@ -7,6 +7,8 @@ $baseUrl = rtrim($scriptDir, '/');
 if ($baseUrl === '.' || $baseUrl === '\\') {
     $baseUrl = '';
 }
+$currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
+$contactHref = $baseUrl . '/contact.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,10 +80,12 @@ if ($baseUrl === '.' || $baseUrl === '\\') {
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/about.php">About Us</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/careers.php">Careers</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/company-directory.php">Company Directory</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -96,7 +100,7 @@ if ($baseUrl === '.' || $baseUrl === '\\') {
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a class="btn-contact" href="#contact">Contact Us</a>
+                        <a class="btn-contact" href="<?php echo $contactHref; ?>">Contact Us</a>
                     </li>
                 </ul>
 

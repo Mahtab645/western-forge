@@ -287,7 +287,7 @@ $startIndex = 7;
                 <div class="resource-links">
                     <a href="#resources">Flange Dimensions <span aria-hidden="true">&rarr;</span></a>
                     <a href="#resources">Dimensional Tolerances <span aria-hidden="true">&rarr;</span></a>
-                    <a href="#resources">Forging 101 <span aria-hidden="true">&rarr;</span></a>
+                    <a href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101 <span aria-hidden="true">&rarr;</span></a>
                     <a href="#resources">See All Resources <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
@@ -311,32 +311,10 @@ $startIndex = 7;
 
 <?php include __DIR__ . '/footer.php'; ?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
     (function () {
-        var panel = document.getElementById('headerSearch');
-        var openBtn = document.getElementById('searchToggle');
-        var closeBtn = document.getElementById('searchClose');
-        var input = document.getElementById('site-search');
-
-        function openSearch() {
-            panel.classList.add('is-open');
-            setTimeout(function () { input.focus(); }, 50);
-        }
-
-        function closeSearch() {
-            panel.classList.remove('is-open');
-        }
-
-        if (openBtn) openBtn.addEventListener('click', openSearch);
-        if (closeBtn) closeBtn.addEventListener('click', closeSearch);
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeSearch();
-        });
-    })();
-
-    (function () {
         var items = Array.prototype.slice.call(document.querySelectorAll('.slider-item'));
+        if (!items.length) return;
         var cats = Array.prototype.slice.call(document.querySelectorAll('#sliderCats a'));
         var catItems = Array.prototype.slice.call(document.querySelectorAll('#sliderCats li'));
         var title = document.getElementById('sliderTitle');

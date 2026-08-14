@@ -32,19 +32,19 @@
             <div class="col-6 col-lg-2">
                 <ul class="footer-links">
                     <li><a href="<?php echo $baseUrl; ?>/index.php">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#custom-forging">Custom Forging</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#resources">Blog</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#products">Products</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#custom-forging">Custom Forging</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Resources</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Blog</a></li>
                     <li><a href="#">Terms of Use</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-3">
                 <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#quality">Quality &amp; Certifications</a></li>
-                    <li><a href="#industries">Industries</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/about.php">About Us</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#quality">Quality &amp; Certifications</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/index.php#industries">Industries</a></li>
+                    <li><a href="<?php echo $baseUrl; ?>/contact.php">Contact Us</a></li>
                     <li><a href="#">Terms of Sale</a></li>
                 </ul>
             </div>
@@ -73,3 +73,29 @@
         </div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    (function () {
+        var panel = document.getElementById('headerSearch');
+        var openBtn = document.getElementById('searchToggle');
+        var closeBtn = document.getElementById('searchClose');
+        var input = document.getElementById('site-search');
+        if (!panel || !openBtn) return;
+
+        function openSearch() {
+            panel.classList.add('is-open');
+            setTimeout(function () { input.focus(); }, 50);
+        }
+
+        function closeSearch() {
+            panel.classList.remove('is-open');
+        }
+
+        openBtn.addEventListener('click', openSearch);
+        if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeSearch();
+        });
+    })();
+</script>
