@@ -805,6 +805,248 @@ a {
   }
 }
 
+.qc-inspections {
+  background: var(--wf-white);
+  padding: 100px 0;
+}
+
+.qc-inspections h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.qc-inspections-grid {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 20px;
+}
+
+.qc-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.qc-item img {
+  width: 42%;
+  max-width: 257px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.qc-item-copy h3 {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.qc-item-copy p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--wf-black);
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .qc-inspections {
+    padding: 56px 0;
+  }
+
+  .qc-inspections h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .qc-item-copy h3 {
+    font-size: 22px;
+  }
+}
+
+.qc-testing {
+  position: relative;
+  background: #16171a url("../images/quality-testing-bg.jpg") 58% 51% / cover no-repeat;
+  padding: 100px 0 120px;
+  overflow: hidden;
+}
+
+.qc-testing-overlay {
+  position: absolute;
+  inset: 0;
+  background: #16171a;
+  opacity: 0.72;
+}
+
+@media (min-width: 768px) {
+  .qc-testing {
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 89.5% 100%, 0 100%);
+  }
+}
+
+.qc-testing .container {
+  position: relative;
+  z-index: 1;
+}
+
+.qc-testing-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+}
+
+.qc-testing-intro h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--wf-white);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+}
+
+.qc-testing-intro p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--wf-white);
+  margin: 0;
+}
+
+.qc-testing h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-white);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.qc-testing h3:not(:first-child) {
+  margin-top: 36px;
+}
+
+.qc-testing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.qc-testing-list li {
+  position: relative;
+  padding: 0 0 18px 45px;
+  font-size: 18px;
+  line-height: 1.875;
+  color: var(--wf-white);
+}
+
+.qc-testing-list li:last-child {
+  padding-bottom: 0;
+}
+
+.qc-testing-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+  background: var(--wf-red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 12.5 9.5 17 19 7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+}
+
+.qc-testing-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .qc-testing {
+    padding: 56px 0 72px;
+  }
+
+  .qc-testing-intro h2 {
+    font-size: 30px;
+  }
+
+  .qc-testing h3 {
+    font-size: 24px;
+  }
+}
+
+.conflict-minerals {
+  background: var(--wf-white);
+  padding: 100px 0;
+}
+
+.conflict-minerals-row {
+  margin-top: 80px;
+}
+
+.conflict-minerals .about-who-copy h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.conflict-minerals-list {
+  margin: 0 0 24px;
+  padding: 0 0 0 24px;
+}
+
+.conflict-minerals-list li {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--wf-black);
+  padding-bottom: 12px;
+}
+
+.conflict-minerals-list li:last-child {
+  padding-bottom: 0;
+}
+
+.conflict-minerals .about-who-copy a {
+  color: var(--wf-red);
+  font-weight: 700;
+}
+
+.conflict-minerals .about-who-copy a:hover,
+.conflict-minerals .about-who-copy a:focus {
+  color: var(--wf-black);
+}
+
+.conflict-minerals-logo {
+  text-align: center;
+}
+
+.conflict-minerals-logo img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .conflict-minerals {
+    padding: 56px 0;
+  }
+
+  .conflict-minerals-row {
+    margin-top: 40px;
+  }
+
+  .conflict-minerals .about-who-copy h3 {
+    font-size: 26px;
+  }
+}
+
 .forging-flange {
   background: var(--wf-white);
   padding: 72px 0 96px;

@@ -109,6 +109,131 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="qc-inspections">
+    <div class="container">
+        <h2>Quality Control Inspections</h2>
+        <div class="row qc-inspections-grid">
+            <?php
+            $qcSteps = [
+                ['title' => 'Raw Material', 'sub' => '100% Receiving Inspection', 'file' => 'qc-raw-material.jpg'],
+                ['title' => 'Sawing', 'sub' => 'In-process QC Inspection', 'file' => 'qc-sawing.jpg'],
+                ['title' => 'Forging', 'sub' => '100% In-process QC Inspection', 'file' => 'qc-forging.jpg'],
+                ['title' => 'Heat Treated (if required)', 'sub' => '100% In-process QC Inspection', 'file' => 'qc-heat.jpg'],
+                ['title' => 'Machining', 'sub' => '100% In-process QC Inspection', 'file' => 'qc-machining.jpg'],
+                ['title' => 'Marking', 'sub' => 'First Article Inspection', 'file' => 'qc-marking.jpg'],
+                ['title' => 'Final Inspection', 'sub' => '100% Inspection', 'file' => 'qc-final.jpg'],
+                ['title' => 'Shipping', 'sub' => 'Job Complete', 'file' => 'qc-shipping.jpg'],
+            ];
+            foreach ($qcSteps as $step):
+            ?>
+            <div class="col-lg-6">
+                <div class="qc-item">
+                    <img src="<?php echo $baseUrl; ?>/images/<?php echo htmlspecialchars($step['file'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($step['title'], ENT_QUOTES, 'UTF-8'); ?>">
+                    <div class="qc-item-copy">
+                        <h3><?php echo htmlspecialchars($step['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                        <p><?php echo htmlspecialchars($step['sub'], ENT_QUOTES, 'UTF-8'); ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section class="qc-testing">
+    <div class="qc-testing-overlay"></div>
+    <div class="container">
+        <div class="qc-testing-intro">
+            <h2>Testing</h2>
+            <p>Western Forge &amp; Flange can accomplish any type of testing as per specification and/or customer specific requirements. Western uses ISO 9001 &amp; ISO 17025 accredited and approved laboratories, whom we audit every year. Our Metallurgist analyzes the results to ensure that our parts meet or exceed all requirements.</p>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h3>Mechanical Testing</h3>
+                <ul class="qc-testing-list">
+                    <li>Tensile Testing</li>
+                    <li>Hardness Testing</li>
+                    <li>Brinell Hardness (HBW) || Rockwell Hardness (HR) || Vickers Micro-hardness (HV)</li>
+                    <li>Impact Testing</li>
+                    <li>Charpy Impact Testing || Izod Impact Testing</li>
+                    <li>Metallography Analysis</li>
+                </ul>
+                <h3>Metallography Analysis</h3>
+                <ul class="qc-testing-list">
+                    <li>Microstructure Examination</li>
+                    <li>Macrostructure Examination</li>
+                    <li>Grain Size Determination</li>
+                    <li>Volume Fraction Point Count</li>
+                </ul>
+                <h3>Non-Destructive Testing</h3>
+                <ul class="qc-testing-list">
+                    <li>Ultrasonic Testing</li>
+                    <li>Liquid Penetrant Testing</li>
+                    <li>Magnetic Particle Testing</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3>Corrosion Testing</h3>
+                <ul class="qc-testing-list">
+                    <li>Intergranular Attack in Austenitic Stainless Steels per ASTM A262 – Practice A, B, C, E, F</li>
+                    <li>Intergranular Corrosion in Nickel-Rich, Chromium Alloys per ASTM G28 Method A</li>
+                    <li>Pitting and Crevice Corrosion Resistance of Stainless Steels in Ferric Chloride Solution per ASTM G48 Method A, B, D</li>
+                    <li>Detrimental Intermetallic Phase in Duplex Stainless Steels per ASTM A923 Method A, C</li>
+                </ul>
+                <h3>Chemistry Analysis</h3>
+                <ul class="qc-testing-list">
+                    <li>Optical Emission Spectroscopy (OES)</li>
+                    <li>Combustion (LECO) Analysis for Carbon, Sulfur, Nitrogen, Oxygen, and Hydrogen</li>
+                    <li>X-Ray Fluorescence (XRF) for Positive Material Identification (PMI)</li>
+                </ul>
+                <div class="qc-testing-cta">
+                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo $baseUrl; ?>/index.php#industries">View Industries</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="conflict-minerals">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="about-who-media">
+                    <span class="about-who-media-accent" aria-hidden="true"></span>
+                    <img src="<?php echo $baseUrl; ?>/images/conflict-minerals.jpg" alt="Western Forge &amp; Flange manufacturing floor">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-who-copy forging-flange-copy">
+                    <h2>Conflict Minerals Policy</h2>
+                    <p>Western Forge &amp; Flange is committed to ensuring the safety and protection of people worldwide. We support ending the violence and human rights violations in the mining of certain minerals from a location described as the “Conflict Region.”</p>
+                    <p>The definition of “conflict minerals” refers to gold, as well as tin, tantalum, and tungsten, regardless of where they are sourced, processed or sold. The U.S. Secretary of State may designate other minerals in the future. The U.S. Securities and Exchange Commission adopted final rules to implement reporting and disclosure requirements related to “conflict minerals,” as directed by the Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010. We support these requirements to further the humanitarian goal of ending violent conflict in designated regions, which has been partially financed by the exploitation and trade of “conflict minerals”.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center g-5 conflict-minerals-row">
+            <div class="col-lg-6">
+                <div class="about-who-copy">
+                    <h3>Our Commitment</h3>
+                    <ol class="conflict-minerals-list">
+                        <li>Support the aims and objectives of the U.S. legislation on the supply of “conflict minerals”.</li>
+                        <li>Do not knowingly procure specified materials that originate in the “conflict region”.</li>
+                        <li>Ensure compliance with these requirements and ask our suppliers to undertake reasonable due diligence with their supply chains to assure that specified metals are not being sourced from conflict regions.</li>
+                        <li>If we discover the use of these minerals in products we sell to be “non-conflict free”, in any material, parts or components we procure, we will take appropriate actions to transition products to be “conflict free”.</li>
+                    </ol>
+                    <p>If you need a copy of Western CMRT, please email: <a href="mailto:quality@western-forge.com">quality@western-forge.com</a></p>
+                    <p>Sincerely,<br>Director of Quality</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="conflict-minerals-logo">
+                    <img src="<?php echo $baseUrl; ?>/images/rmi-logo.jpg" alt="Responsible Minerals Initiative">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>
 </body>
 </html>
