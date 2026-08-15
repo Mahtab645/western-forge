@@ -43,7 +43,7 @@
                 <ul class="footer-links">
                     <li><a href="<?php echo $baseUrl; ?>/about.php">About Us</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a></li>
-                    <li><a href="<?php echo $baseUrl; ?>/index.php#industries">Industries</a></li>
+                    <li><a href="<?php echo wf_industries_listing_url($baseUrl); ?>">Industries</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/contact.php">Contact Us</a></li>
                     <li><a href="#">Terms of Sale</a></li>
                 </ul>

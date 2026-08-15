@@ -10,7 +10,7 @@ include __DIR__ . '/header.php';
             <h1>Forging 101</h1>
             <p>Forging is a manufacturing process involving the shaping of metal using localized compressive forces. These forces are delivered with a power hammer or press. No other process for working metal can equal forging results in strength and toughness.</p>
             <p>To allow easy functionality and interchangeability, flanges are designed to have standardized dimensions. Common world standards include ASA/ASME (USA), PN/DIN (European), BS10 (British/Australian), and JIS/KS (Japanese/Korean).</p>
-            <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/index.php#industries">Explore Industries</a>
+            <a class="btn-hero btn-hero-primary" href="<?php echo wf_industries_listing_url($baseUrl); ?>">Explore Industries</a>
         </div>
     </div>
 </section>

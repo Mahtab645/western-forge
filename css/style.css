@@ -3753,6 +3753,199 @@ a {
 }
 
 /* -------------------------------------------------------------------------
+   Industry pages
+   ------------------------------------------------------------------------- */
+
+.industry-hero {
+  position: relative;
+  min-height: 453px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #111;
+  background-image: url("../images/industry-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.industry-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.48;
+}
+
+.industry-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.industry-hero-copy {
+  max-width: 720px;
+  padding: 100px 0 90px;
+}
+
+.industry-hero-copy h1 {
+  color: var(--wf-white);
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+
+.industry-hero-copy p {
+  color: var(--wf-white);
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 0 0 32px;
+}
+
+.industry-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .industry-hero {
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 89.5% 100%, 0 100%);
+  }
+}
+
+.industry-split {
+  background: var(--wf-white);
+  padding: 72px 0;
+}
+
+.industry-split.is-alt {
+  background: var(--wf-gray);
+}
+
+.industry-split .about-who-media {
+  margin-top: 24px;
+}
+
+.industry-split .about-who-media img {
+  aspect-ratio: 4 / 3;
+}
+
+.industry-split-copy h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.industry-split-copy p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0 0 18px;
+}
+
+.industry-related {
+  padding-bottom: 80px;
+}
+
+.industry-cta .cta-box .btn-view-products {
+  font-size: 14px;
+  padding: 12px 18px;
+}
+
+.industry-cta .cta-box .btn-view-products:hover,
+.industry-cta .cta-box .btn-view-products:focus {
+  background: var(--wf-white);
+  color: var(--wf-red);
+  box-shadow: inset 0 0 0 2px var(--wf-red);
+}
+
+.industries-listing {
+  padding: 80px 0 64px;
+}
+
+.industries-listing-intro {
+  max-width: 920px;
+  margin: 0 0 40px;
+}
+
+.industries-listing-intro h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.industries-listing-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 0 0 16px;
+}
+
+.industries-listing-sub {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 28px;
+}
+
+.industry-card {
+  display: block;
+  height: 100%;
+  background: var(--wf-gray);
+  padding: 32px 28px;
+  color: var(--wf-black);
+  text-decoration: none;
+  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+}
+
+.industry-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.industry-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3a3d40;
+}
+
+.industry-card:hover h4 {
+  color: var(--wf-red);
+}
+
+@media (max-width: 1199.98px) {
+  .industry-hero-copy h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .industry-hero-copy {
+    padding: 48px 0 56px;
+  }
+
+  .industry-hero-copy h1 {
+    font-size: 32px;
+  }
+
+  .industry-hero-actions .btn-hero {
+    width: 100%;
+  }
+
+  .industry-split,
+  .industries-listing {
+    padding: 48px 0 32px;
+  }
+
+  .industry-split-copy h2,
+  .industries-listing-intro h2 {
+    font-size: 26px;
+  }
+}
+
+/* -------------------------------------------------------------------------
    Products listing
    ------------------------------------------------------------------------- */
 

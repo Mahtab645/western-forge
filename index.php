@@ -239,20 +239,11 @@ $startIndex = 7;
         <h2>Industries We Support</h2>
         <p class="industries-lead">Companies that require high-performance forged products trust Western Forge &amp; Flange to provide the highest level of engineered components to meet a multitude of applications across a wide spectrum of industries.</p>
         <ul class="industries-list">
-            <li><a href="#industries">Petrochemical</a></li>
-            <li><a href="#industries">Liquefied Natural Gas</a></li>
-            <li><a href="#industries">Oil and Gas</a></li>
-            <li><a href="#industries">Renewable Fuels</a></li>
-            <li><a href="#industries">Nuclear</a></li>
-            <li><a href="#industries">Power Generation</a></li>
-            <li><a href="#industries">Pulp and Paper</a></li>
-            <li><a href="#industries">Marine and Shipbuilding</a></li>
-            <li><a href="#industries">Pharmaceuticals</a></li>
-            <li><a href="#industries">Agriculture</a></li>
-            <li><a href="#industries">Mining</a></li>
-            <li><a href="#industries">Defense</a></li>
+            <?php foreach (wf_industries() as $item): ?>
+            <li><a href="<?php echo wf_industry_url($item['slug'], $baseUrl); ?>"><?php echo htmlspecialchars($item['card'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+            <?php endforeach; ?>
         </ul>
-        <a class="btn-view-products" href="#industries">Explore Industries</a>
+        <a class="btn-view-products" href="<?php echo wf_industries_listing_url($baseUrl); ?>">Explore Industries</a>
     </div>
 </section>
 

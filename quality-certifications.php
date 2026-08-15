@@ -187,7 +187,7 @@ include __DIR__ . '/header.php';
                     <li>X-Ray Fluorescence (XRF) for Positive Material Identification (PMI)</li>
                 </ul>
                 <div class="qc-testing-cta">
-                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo $baseUrl; ?>/index.php#industries">View Industries</a>
+                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo wf_industries_listing_url($baseUrl); ?>">View Industries</a>
                 </div>
             </div>
         </div>

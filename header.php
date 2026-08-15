@@ -16,11 +16,17 @@ if ($baseUrl === '.' || $baseUrl === '\\') {
 $currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
 $contactHref = $baseUrl . '/contact.php';
 require_once __DIR__ . '/includes/products.php';
+require_once __DIR__ . '/includes/industries.php';
 $currentProductSlug = wf_request_product_slug();
+$currentIndustrySlug = wf_request_industry_slug();
 if (!isset($isProductsListing)) {
     $isProductsListing = false;
 }
+if (!isset($isIndustriesListing)) {
+    $isIndustriesListing = false;
+}
 $isProductPage = $isProductsListing || ($currentProductSlug !== '' && (bool) wf_get_product($currentProductSlug));
+$isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool) wf_get_industry($currentIndustrySlug));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,21 +75,12 @@ $isProductPage = $isProductsListing || ($currentProductSlug !== '' && (bool) wf_
                         <a class="nav-link<?php echo $currentPage === 'quality-certifications.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Industries</a>
+                        <a class="nav-link dropdown-toggle<?php echo $isIndustryPage ? ' active' : ''; ?>" href="<?php echo wf_industries_listing_url($baseUrl); ?>" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Industries</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item dropdown-heading" href="#">Industries Served</a></li>
-                            <li><a class="dropdown-item" href="#">Chemical &amp; Petrochemical</a></li>
-                            <li><a class="dropdown-item" href="#">LNG</a></li>
-                            <li><a class="dropdown-item" href="#">Oil &amp; Gas</a></li>
-                            <li><a class="dropdown-item" href="#">Renewable Fuels</a></li>
-                            <li><a class="dropdown-item" href="#">Nuclear</a></li>
-                            <li><a class="dropdown-item" href="#">Power Generation</a></li>
-                            <li><a class="dropdown-item" href="#">Pulp &amp; Paper</a></li>
-                            <li><a class="dropdown-item" href="#">Marine &amp; Shipbuilding</a></li>
-                            <li><a class="dropdown-item" href="#">Pharmaceuticals</a></li>
-                            <li><a class="dropdown-item" href="#">Agriculture</a></li>
-                            <li><a class="dropdown-item" href="#">Mining</a></li>
-                            <li><a class="dropdown-item" href="#">Defense</a></li>
+                            <li><a class="dropdown-item dropdown-heading" href="<?php echo wf_industries_listing_url($baseUrl); ?>">Industries Served</a></li>
+                            <?php foreach (wf_industries() as $navIndustry): ?>
+                            <li><a class="dropdown-item<?php echo $currentIndustrySlug === $navIndustry['slug'] ? ' active' : ''; ?>" href="<?php echo wf_industry_url($navIndustry['slug'], $baseUrl); ?>"><?php echo htmlspecialchars($navIndustry['nav'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
