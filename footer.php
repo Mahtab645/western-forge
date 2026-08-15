@@ -75,27 +75,4 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script>
-    (function () {
-        var panel = document.getElementById('headerSearch');
-        var openBtn = document.getElementById('searchToggle');
-        var closeBtn = document.getElementById('searchClose');
-        var input = document.getElementById('site-search');
-        if (!panel || !openBtn) return;
-
-        function openSearch() {
-            panel.classList.add('is-open');
-            setTimeout(function () { input.focus(); }, 50);
-        }
-
-        function closeSearch() {
-            panel.classList.remove('is-open');
-        }
-
-        openBtn.addEventListener('click', openSearch);
-        if (closeBtn) closeBtn.addEventListener('click', closeSearch);
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeSearch();
-        });
-    })();
-</script>
+<script src="<?php echo $baseUrl; ?>/js/custom.js"></script>
