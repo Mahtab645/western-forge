@@ -141,9 +141,9 @@ $hasSpecs = !empty($product['dimensions']) || !empty($product['alloys']) || !emp
 
 <section class="cta-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="cta-box text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <div class="cta-box">
                     <h2>Discuss Your Project</h2>
                     <p>Ready to move forward with your project? Take the next step by requesting a quote or talking directly to our experts about industry-specific needs.</p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
