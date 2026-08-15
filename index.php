@@ -212,9 +212,10 @@ $startIndex = 7;
 
 <section class="materials-section">
     <div class="container">
+         <h2>Material Grades</h2>
         <div class="row g-5 align-items-start">
             <div class="col-lg-5">
-                <h2>Material Grades</h2>
+               
                 <h3>80+ Metals In Stock</h3>
                 <p>Take advantage of our inventory of metals including stainless steel and high nickel alloys.</p>
             </div>

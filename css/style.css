@@ -141,7 +141,7 @@ a {
   background: var(--wf-white);
   position: relative;
   z-index: 3;
-  min-height: 78px;
+  min-height: 87px;
   width: 100%;
   max-width: 100%;
 }
@@ -3122,6 +3122,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
+  width: 216px;
   padding: 21px 28px;
   border: 0;
   border-radius: 0;
@@ -3359,7 +3360,6 @@ a {
   font-weight: 700;
   color: var(--wf-black);
   margin: 0 0 24px;
-  max-width: 360px;
   line-height: 1.25;
 }
 
@@ -3395,12 +3395,6 @@ a {
   background-position: center;
 }
 
-.materials-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.78);
-}
 
 .materials-section .container {
   position: relative;
@@ -3412,7 +3406,7 @@ a {
   font-weight: 700;
   color: var(--wf-black);
   line-height: 1.15;
-  margin: 0 0 16px;
+  margin: 0 0 40px;
 }
 
 .materials-section h3 {
