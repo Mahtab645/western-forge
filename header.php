@@ -53,15 +53,21 @@ $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool)
                 <a class="header-linkedin" href="https://www.linkedin.com/company/western-forge-&amp;-flange/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <img src="<?php echo $baseUrl; ?>/images/linkedin.svg" alt="LinkedIn">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-collapse" id="mainNav">
+                <div class="mobile-nav-head">
+                    <p class="mobile-nav-title">Menu</p>
+                    <button class="nav-close" type="button" id="navClose" aria-label="Close menu">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <ul class="header-menu navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo $isProductPage ? ' active' : ''; ?>" href="<?php echo wf_products_listing_url($baseUrl); ?>" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Products</a>
+                        <a class="nav-link dropdown-toggle<?php echo $isProductPage ? ' active' : ''; ?>" href="<?php echo wf_products_listing_url($baseUrl); ?>" aria-expanded="false">Products</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item dropdown-heading" href="<?php echo wf_products_listing_url($baseUrl); ?>">Products</a></li>
                             <?php foreach (wf_products() as $navProduct): ?>
@@ -76,7 +82,7 @@ $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool)
                         <a class="nav-link<?php echo $currentPage === 'quality-certifications.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo $isIndustryPage ? ' active' : ''; ?>" href="<?php echo wf_industries_listing_url($baseUrl); ?>" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Industries</a>
+                        <a class="nav-link dropdown-toggle<?php echo $isIndustryPage ? ' active' : ''; ?>" href="<?php echo wf_industries_listing_url($baseUrl); ?>" aria-expanded="false">Industries</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item dropdown-heading" href="<?php echo wf_industries_listing_url($baseUrl); ?>">Industries Served</a></li>
                             <?php foreach (wf_industries() as $navIndustry): ?>
@@ -85,7 +91,7 @@ $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool)
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" aria-expanded="false">About</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/about.php">About</a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/careers.php">Careers</a></li>
@@ -117,3 +123,4 @@ $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool)
         </nav>
     </div>
 </header>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>

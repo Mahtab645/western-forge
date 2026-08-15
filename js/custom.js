@@ -204,5 +204,74 @@
         initProductSlider();
         initTabSlider('lpw-brands');
         initTabSlider('flange-types');
+        initMobileNav();
     });
+
+    function initMobileNav() {
+        var nav = document.getElementById('mainNav');
+        var toggle = document.getElementById('navToggle');
+        var closeBtn = document.getElementById('navClose');
+        var backdrop = document.getElementById('navBackdrop');
+        if (!nav || !toggle) return;
+
+        var mq = window.matchMedia('(max-width: 991.98px)');
+
+        function isMobile() {
+            return mq.matches;
+        }
+
+        function closeAccordions() {
+            nav.querySelectorAll('.dropdown.is-open').forEach(function (item) {
+                item.classList.remove('is-open');
+                var link = item.querySelector(':scope > .nav-link');
+                if (link) link.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function closeNav() {
+            document.body.classList.remove('nav-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            if (backdrop) backdrop.hidden = true;
+            closeAccordions();
+        }
+
+        function openNav() {
+            document.body.classList.add('nav-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            if (backdrop) backdrop.hidden = false;
+        }
+
+        toggle.addEventListener('click', function () {
+            if (!isMobile()) return;
+            if (document.body.classList.contains('nav-open')) closeNav();
+            else openNav();
+        });
+
+        if (closeBtn) closeBtn.addEventListener('click', closeNav);
+        if (backdrop) backdrop.addEventListener('click', closeNav);
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeNav();
+        });
+
+        nav.querySelectorAll('.dropdown > .nav-link').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                if (!isMobile()) return;
+                e.preventDefault();
+                var item = link.parentElement;
+                var wasOpen = item.classList.contains('is-open');
+                closeAccordions();
+                if (!wasOpen) {
+                    item.classList.add('is-open');
+                    link.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        if (mq.addEventListener) {
+            mq.addEventListener('change', function () {
+                if (!isMobile()) closeNav();
+            });
+        }
+    }
 })();
