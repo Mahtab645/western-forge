@@ -466,6 +466,7 @@ a {
   .navbar-collapse {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     position: fixed;
     top: 0;
     right: 0;
@@ -493,21 +494,25 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     flex: 0 0 auto;
-    padding: 22px 4px 18px;
+    padding: 22px 0 18px;
   }
 
   .mobile-nav-title {
     margin: 0;
+    margin-right: auto;
     color: var(--wf-white);
     font-size: 22px;
     font-weight: 700;
     line-height: 1;
+    text-align: left;
   }
 
   .nav-close {
     width: 36px;
     height: 36px;
+    margin-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 50%;
     background: transparent;
@@ -518,6 +523,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0 0 3px;
+    flex: 0 0 auto;
   }
 
   .header-menu {
