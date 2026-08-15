@@ -101,6 +101,149 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="lpw-brands" id="lpw-brands">
+    <div class="container">
+        <h2>The LPW Family of Brands</h2>
+        <p class="lpw-brands-intro">Our fellow companies within the LPW Group include highly specialized and leading manufacturers across product categories. In addition to Western Forge &amp; Flange, the other LPW legacy brands are:</p>
+
+        <div class="lpw-brands-tablist" role="tablist" aria-label="LPW family of brands">
+            <button type="button" role="tab" id="lpw-tab-0" aria-controls="lpw-panel-0" aria-selected="true" class="is-active"><span>Ladish Valves</span></button>
+            <button type="button" role="tab" id="lpw-tab-1" aria-controls="lpw-panel-1" aria-selected="false"><span>Smith Valves</span></button>
+            <button type="button" role="tab" id="lpw-tab-2" aria-controls="lpw-panel-2" aria-selected="false"><span>Penn Machine</span></button>
+            <button type="button" role="tab" id="lpw-tab-3" aria-controls="lpw-panel-3" aria-selected="false"><span>Advanced Industrial Technologies</span></button>
+            <button type="button" role="tab" id="lpw-tab-4" aria-controls="lpw-panel-4" aria-selected="false"><span>Diamond Gear</span></button>
+            <button type="button" role="tab" id="lpw-tab-5" aria-controls="lpw-panel-5" aria-selected="false"><span>US Drop Forge</span></button>
+        </div>
+
+        <div class="lpw-brands-viewport" id="lpwBrandsViewport">
+            <div class="lpw-brands-track" id="lpwBrandsTrack">
+                <article class="lpw-brands-slide is-active" id="lpw-panel-0" role="tabpanel" aria-labelledby="lpw-tab-0">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/ladish-logo.png" alt="Ladish Valves">
+                                </div>
+                                <p>Designer and manufacturer of engineered gate, globe, check, and ball valves, focusing on stainless, duplex, and high nickel alloys. Ladish Valves are built for the most demanding corrosive, erosive, and high-purity applications.</p>
+                                <a class="btn-view-products" href="https://www.ladishvalves.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/ladish-product.png" alt="Ladish Valves product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lpw-brands-slide" id="lpw-panel-1" role="tabpanel" aria-labelledby="lpw-tab-1">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo lpw-brands-logo-smith">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/smith-logo.png" alt="Smith Valves">
+                                </div>
+                                <p>One of the world’s longest-standing providers of API 602 forged steel valves.</p>
+                                <a class="btn-view-products" href="https://smithvalves.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/smith-product.png" alt="Smith Valves product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lpw-brands-slide" id="lpw-panel-2" role="tabpanel" aria-labelledby="lpw-tab-2">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo lpw-brands-logo-penn">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/penn-logo.png" alt="Penn Machine">
+                                </div>
+                                <p>A leader in the forged pressure fitting industry, founded in 1931.</p>
+                                <a class="btn-view-products" href="https://www.pennusa.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/penn-product.png" alt="Penn Machine product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lpw-brands-slide" id="lpw-panel-3" role="tabpanel" aria-labelledby="lpw-tab-3">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo lpw-brands-logo-ait">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/ait-logo.png" alt="Advanced Industrial Technologies">
+                                </div>
+                                <p>The exclusive North American distributor for Air Torque rack and pinion and Scotch yoke actuators.</p>
+                                <a class="btn-view-products" href="http://aittexas.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/ait-product.png" alt="Advanced Industrial Technologies product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lpw-brands-slide" id="lpw-panel-4" role="tabpanel" aria-labelledby="lpw-tab-4">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo lpw-brands-logo-diamond">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/diamond-logo.png" alt="Diamond Gear">
+                                </div>
+                                <p>A provider of high-quality industrial worm gears, bevel gears, and declutchable override gears with a focus on valve automation.</p>
+                                <a class="btn-view-products" href="https://diamond-gear.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/diamond-product.png" alt="Diamond Gear product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="lpw-brands-slide" id="lpw-panel-5" role="tabpanel" aria-labelledby="lpw-tab-5">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7">
+                            <div class="lpw-brands-copy">
+                                <div class="lpw-brands-logo lpw-brands-logo-usdf">
+                                    <img src="<?php echo $baseUrl; ?>/images/lpw/usdf-logo.png" alt="US Drop Forge">
+                                </div>
+                                <p>A leader in custom impression die forging, creating dies in carbon, stainless, chrome moly, aluminum, copper nickel, hastelloy, monel, and other alloys.</p>
+                                <a class="btn-view-products" href="https://usdropforge.com/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="lpw-brands-media">
+                                <img src="<?php echo $baseUrl; ?>/images/lpw/usdf-product.png" alt="US Drop Forge product">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="lpw-brands-dots" aria-label="Brand slides">
+            <button type="button" class="is-active" aria-label="Show slide 1" aria-current="true"></button>
+            <button type="button" aria-label="Show slide 2"></button>
+            <button type="button" aria-label="Show slide 3"></button>
+            <button type="button" aria-label="Show slide 4"></button>
+            <button type="button" aria-label="Show slide 5"></button>
+            <button type="button" aria-label="Show slide 6"></button>
+        </div>
+    </div>
+</section>
+
 <section class="about-community">
     <div class="container">
         <div class="row align-items-center g-5">
@@ -135,5 +278,113 @@ include __DIR__ . '/header.php';
 </section>
 
 <?php include __DIR__ . '/footer.php'; ?>
+<script>
+    (function () {
+        var root = document.getElementById('lpw-brands');
+        if (!root) return;
+
+        var tabs = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-tablist [role="tab"]'));
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-slide'));
+        var dots = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-dots button'));
+        var track = document.getElementById('lpwBrandsTrack');
+        var viewport = document.getElementById('lpwBrandsViewport');
+        var index = 0;
+        var timer = null;
+        var delay = 5500;
+        var startX = 0;
+        var deltaX = 0;
+        var dragging = false;
+
+        function goTo(next, user) {
+            if (!slides.length) return;
+            index = (next + slides.length) % slides.length;
+            track.style.transform = 'translateX(-' + (index * 100) + '%)';
+
+            tabs.forEach(function (tab, i) {
+                var on = i === index;
+                tab.classList.toggle('is-active', on);
+                tab.setAttribute('aria-selected', on ? 'true' : 'false');
+                tab.tabIndex = on ? 0 : -1;
+            });
+            slides.forEach(function (slide, i) {
+                var on = i === index;
+                slide.classList.toggle('is-active', on);
+                slide.setAttribute('aria-hidden', on ? 'false' : 'true');
+            });
+            dots.forEach(function (dot, i) {
+                var on = i === index;
+                dot.classList.toggle('is-active', on);
+                if (on) dot.setAttribute('aria-current', 'true');
+                else dot.removeAttribute('aria-current');
+            });
+
+            if (user && tabs[index]) {
+                var list = tabs[index].parentElement;
+                var tabEl = tabs[index];
+                var target = tabEl.offsetLeft - 24;
+                if (list.scrollTo) list.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+            }
+            if (user) restart();
+        }
+
+        function next() {
+            goTo(index + 1, false);
+        }
+
+        function start() {
+            stop();
+            timer = setInterval(next, delay);
+        }
+
+        function stop() {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        function restart() {
+            stop();
+            start();
+        }
+
+        tabs.forEach(function (tab, i) {
+            tab.addEventListener('click', function () { goTo(i, true); });
+        });
+        dots.forEach(function (dot, i) {
+            dot.addEventListener('click', function () { goTo(i, true); });
+        });
+
+        root.addEventListener('mouseenter', stop);
+        root.addEventListener('mouseleave', start);
+
+        viewport.addEventListener('pointerdown', function (e) {
+            if (e.target.closest('a, button')) return;
+            dragging = true;
+            startX = e.clientX;
+            deltaX = 0;
+            track.style.transition = 'none';
+            stop();
+        });
+        window.addEventListener('pointermove', function (e) {
+            if (!dragging) return;
+            deltaX = e.clientX - startX;
+            track.style.transform = 'translateX(calc(' + (-index * 100) + '% + ' + deltaX + 'px))';
+        });
+        window.addEventListener('pointerup', function () {
+            if (!dragging) return;
+            dragging = false;
+            track.style.transition = '';
+            if (Math.abs(deltaX) > 60) {
+                goTo(index + (deltaX < 0 ? 1 : -1), true);
+            } else {
+                goTo(index, true);
+            }
+        });
+
+        goTo(0, false);
+        start();
+    })();
+</script>
 </body>
 </html>

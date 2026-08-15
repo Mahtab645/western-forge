@@ -51,12 +51,12 @@
             <div class="col-md-6 col-lg-3">
                 <p class="footer-brands-title">LPW Family of Brands</p>
                 <ul class="footer-links">
-                    <li><a href="#">Smith Valves</a></li>
-                    <li><a href="#">Penn Machine</a></li>
-                    <li><a href="#">Ladish Valves</a></li>
-                    <li><a href="#">US Drop Forge</a></li>
-                    <li><a href="#">AIT</a></li>
-                    <li><a href="#">Diamond Gear</a></li>
+                    <li><a href="https://smithvalves.com/" target="_blank" rel="noopener noreferrer">Smith Valves</a></li>
+                    <li><a href="https://www.pennusa.com/" target="_blank" rel="noopener noreferrer">Penn Machine</a></li>
+                    <li><a href="https://www.ladishvalves.com/" target="_blank" rel="noopener noreferrer">Ladish Valves</a></li>
+                    <li><a href="https://usdropforge.com/" target="_blank" rel="noopener noreferrer">US Drop Forge</a></li>
+                    <li><a href="http://aittexas.com/" target="_blank" rel="noopener noreferrer">AIT</a></li>
+                    <li><a href="https://diamond-gear.com/" target="_blank" rel="noopener noreferrer">Diamond Gear</a></li>
                 </ul>
             </div>
         </div>

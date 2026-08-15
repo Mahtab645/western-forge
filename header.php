@@ -42,8 +42,9 @@ $contactHref = $baseUrl . '/contact.php';
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="header-menu navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Products</a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-heading" href="#">Products</a></li>
                             <li><a class="dropdown-item" href="#">Weld Neck</a></li>
                             <li><a class="dropdown-item" href="#">Slip-On</a></li>
                             <li><a class="dropdown-item" href="#">Blind</a></li>
@@ -54,6 +55,7 @@ $contactHref = $baseUrl . '/contact.php';
                             <li><a class="dropdown-item" href="#">Studding Outlet</a></li>
                             <li><a class="dropdown-item" href="#">Long Weld Neck</a></li>
                             <li><a class="dropdown-item" href="#">Orifice Set</a></li>
+                            <li><a class="dropdown-item" href="#">Other Flanges &amp; Non-Standard Products</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -63,8 +65,9 @@ $contactHref = $baseUrl . '/contact.php';
                         <a class="nav-link<?php echo $currentPage === 'quality-certifications.php' ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/quality-certifications.php">Quality &amp; Certifications</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Industries</a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-heading" href="#">Industries Served</a></li>
                             <li><a class="dropdown-item" href="#">Chemical &amp; Petrochemical</a></li>
                             <li><a class="dropdown-item" href="#">LNG</a></li>
                             <li><a class="dropdown-item" href="#">Oil &amp; Gas</a></li>
@@ -80,16 +83,20 @@ $contactHref = $baseUrl . '/contact.php';
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">About</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/about.php">About Us</a></li>
+                            <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/about.php">About</a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/careers.php">Careers</a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/company-directory.php">Company Directory</a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="<?php echo $baseUrl; ?>/index.php#resources" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/index.php#resources">Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <button class="header-search-btn" type="button" id="searchToggle" aria-label="Search">
