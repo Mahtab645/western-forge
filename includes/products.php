@@ -5,6 +5,11 @@ function wf_product_url($slug, $baseUrl = '')
     return rtrim((string) $baseUrl, '/') . '/products/' . rawurlencode($slug) . '/';
 }
 
+function wf_products_listing_url($baseUrl = '')
+{
+    return rtrim((string) $baseUrl, '/') . '/products/';
+}
+
 function wf_request_product_slug()
 {
     if (!empty($_GET['slug'])) {

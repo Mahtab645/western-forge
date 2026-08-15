@@ -17,7 +17,10 @@ $currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
 $contactHref = $baseUrl . '/contact.php';
 require_once __DIR__ . '/includes/products.php';
 $currentProductSlug = wf_request_product_slug();
-$isProductPage = $currentProductSlug !== '' && wf_get_product($currentProductSlug);
+if (!isset($isProductsListing)) {
+    $isProductsListing = false;
+}
+$isProductPage = $isProductsListing || ($currentProductSlug !== '' && (bool) wf_get_product($currentProductSlug));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,9 +54,9 @@ $isProductPage = $currentProductSlug !== '' && wf_get_product($currentProductSlu
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="header-menu navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo $isProductPage ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/index.php#products" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Products</a>
+                        <a class="nav-link dropdown-toggle<?php echo $isProductPage ? ' active' : ''; ?>" href="<?php echo wf_products_listing_url($baseUrl); ?>" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Products</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/index.php#products">Products</a></li>
+                            <li><a class="dropdown-item dropdown-heading" href="<?php echo wf_products_listing_url($baseUrl); ?>">Products</a></li>
                             <?php foreach (wf_products() as $navProduct): ?>
                             <li><a class="dropdown-item<?php echo $currentProductSlug === $navProduct['slug'] ? ' active' : ''; ?>" href="<?php echo wf_product_url($navProduct['slug'], $baseUrl); ?>"><?php echo htmlspecialchars($navProduct['nav'], ENT_QUOTES, 'UTF-8'); ?></a></li>
                             <?php endforeach; ?>

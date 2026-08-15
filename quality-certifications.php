@@ -82,7 +82,7 @@ include __DIR__ . '/header.php';
             <?php endforeach; ?>
             <div class="col-md-6 col-lg-4">
                 <div class="quality-cert-card quality-cert-card-cta">
-                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo $baseUrl; ?>/index.php#products">View Products</a>
+                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo wf_products_listing_url($baseUrl); ?>">View Products</a>
                 </div>
             </div>
         </div>

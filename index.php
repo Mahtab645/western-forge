@@ -132,7 +132,7 @@ $startIndex = 7;
         </div>
 
         <div class="text-center">
-            <a class="btn-view-products" href="#products">View All Products</a>
+            <a class="btn-view-products" href="<?php echo wf_products_listing_url($baseUrl); ?>">View All Products</a>
         </div>
     </div>
 </section>

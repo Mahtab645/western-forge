@@ -32,7 +32,7 @@
             <div class="col-6 col-lg-2">
                 <ul class="footer-links">
                     <li><a href="<?php echo $baseUrl; ?>/index.php">Home</a></li>
-                    <li><a href="<?php echo $baseUrl; ?>/index.php#products">Products</a></li>
+                    <li><a href="<?php echo wf_products_listing_url($baseUrl); ?>">Products</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/custom-forging.php">Custom Forging</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Resources</a></li>
                     <li><a href="<?php echo $baseUrl; ?>/index.php#resources">Blog</a></li>
