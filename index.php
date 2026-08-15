@@ -280,8 +280,7 @@ $startIndex = 7;
                     <a href="#resources">Flange Dimensions <span aria-hidden="true">&rarr;</span></a>
                     <a href="#resources">Dimensional Tolerances <span aria-hidden="true">&rarr;</span></a>
                     <a href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101 <span aria-hidden="true">&rarr;</span></a>
-                    <a href="#resources">See All Resources <span aria-hidden="true">&rarr;</span></a>
-                </div>
+                 </div>
             </div>
         </div>
     </div>
