@@ -2464,88 +2464,59 @@ a {
   }
 }
 
-.flange-types {
-  background: var(--wf-white);
-  padding: 72px 0 80px;
-}
-
-.flange-types .lpw-brands-tablist {
-  justify-content: space-between;
-  gap: 28px;
-  margin-bottom: 8px;
-}
-
-.flange-types .lpw-brands-tablist button {
-  flex: 0 0 auto;
-  min-width: 0;
-  height: 56px;
-}
-
-.flange-types .lpw-brands-tablist button span {
-  font-weight: 400;
-}
-
-.flange-types .lpw-brands-tablist button.is-active span,
-.flange-types .lpw-brands-tablist button:hover span {
-  font-weight: 700;
-}
-
 .flange-types .lpw-brands-tablist button span::after {
-  border-bottom: 4px solid var(--wf-red);
+  border-bottom-color: var(--wf-red);
 }
 
-.flange-types-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
-}
-
-.flange-types-media img {
-  display: block;
+.flange-types .lpw-brands-media img {
   width: auto;
   max-width: 100%;
-  max-height: 340px;
+  max-height: 360px;
   object-fit: contain;
 }
 
 .flange-types-copy h3 {
   font-size: 32px;
   font-weight: 700;
+  line-height: 1.2;
   margin: 0 0 24px;
   color: var(--wf-black);
 }
 
 .flange-types-copy .trust-list {
-  margin-bottom: 28px;
+  margin: 0 0 28px;
+}
+
+.flange-types-copy .trust-list li {
+  font-size: 18px;
+  padding-bottom: 14px;
 }
 
 .flange-types-btn {
+  position: relative;
   width: auto;
-  min-width: 168px;
-  margin-top: 0;
-  font-size: 15px;
-  padding: 14px 22px;
+  min-width: 167px;
+  padding: 21px 40px 21px 22px;
 }
 
-.flange-types-btn span {
-  margin-left: 8px;
+.flange-types-btn::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 @media (max-width: 767.98px) {
-  .flange-types {
-    padding: 48px 0 56px;
-  }
-
   .flange-types-copy h3 {
     font-size: 26px;
   }
 
-  .flange-types-media {
-    min-height: 200px;
-  }
-
-  .flange-types-media img {
+  .flange-types .lpw-brands-media img {
     max-height: 220px;
   }
 }

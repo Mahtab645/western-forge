@@ -98,9 +98,9 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="flange-types" id="flange-types">
+<section class="lpw-brands flange-types" id="flange-types">
     <div class="container">
-        <div class="flange-types-tablist lpw-brands-tablist" role="tablist" aria-label="Flange types">
+        <div class="lpw-brands-tablist" role="tablist" aria-label="Flange types">
             <?php
             $flangeSlides = [
                 [
@@ -179,25 +179,25 @@ include __DIR__ . '/header.php';
             <?php endforeach; ?>
         </div>
 
-        <div class="flange-types-viewport lpw-brands-viewport" id="flangeTypesViewport">
-            <div class="flange-types-track lpw-brands-track" id="flangeTypesTrack">
+        <div class="lpw-brands-viewport" id="flangeTypesViewport">
+            <div class="lpw-brands-track" id="flangeTypesTrack">
                 <?php foreach ($flangeSlides as $i => $slide): ?>
-                <article class="flange-types-slide lpw-brands-slide<?php echo $i === 0 ? ' is-active' : ''; ?>" id="flange-panel-<?php echo $i; ?>" role="tabpanel" aria-labelledby="flange-tab-<?php echo $i; ?>" <?php echo $i === 0 ? '' : 'aria-hidden="true"'; ?>>
+                <article class="lpw-brands-slide<?php echo $i === 0 ? ' is-active' : ''; ?>" id="flange-panel-<?php echo $i; ?>" role="tabpanel" aria-labelledby="flange-tab-<?php echo $i; ?>">
                     <div class="row align-items-center g-4 g-lg-5">
                         <div class="col-lg-6">
-                            <div class="flange-types-media">
+                            <div class="flange-types-media lpw-brands-media">
                                 <img src="<?php echo $baseUrl; ?>/images/products/<?php echo htmlspecialchars($slide['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($slide['title'], ENT_QUOTES, 'UTF-8'); ?>">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="flange-types-copy">
+                            <div class="flange-types-copy lpw-brands-copy">
                                 <h3><?php echo htmlspecialchars($slide['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
                                 <ul class="trust-list">
                                     <?php foreach ($slide['points'] as $point): ?>
                                     <li><?php echo htmlspecialchars($point, ENT_QUOTES, 'UTF-8'); ?></li>
                                     <?php endforeach; ?>
                                 </ul>
-                                <a class="btn-view-products flange-types-btn" href="<?php echo wf_product_url($slide['slug'], $baseUrl); ?>">More Details <span aria-hidden="true">↗</span></a>
+                                <a class="btn-view-products flange-types-btn" href="<?php echo wf_product_url($slide['slug'], $baseUrl); ?>">More Details</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
 
-        <div class="flange-types-dots lpw-brands-dots" aria-label="Flange type slides">
+        <div class="lpw-brands-dots" aria-label="Flange type slides">
             <?php foreach ($flangeSlides as $i => $slide): ?>
             <button type="button" class="<?php echo $i === 0 ? 'is-active' : ''; ?>" aria-label="Show <?php echo htmlspecialchars($slide['tab'], ENT_QUOTES, 'UTF-8'); ?>"<?php echo $i === 0 ? ' aria-current="true"' : ''; ?>></button>
             <?php endforeach; ?>
