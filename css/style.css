@@ -246,7 +246,7 @@ a {
   font-weight: 400;
   line-height: 1.2;
   color: #000;
-  padding: 21px 12px 21px 10px;
+  padding: 13px 12px 13px 10px;
   white-space: normal;
   width: fit-content;
   max-width: 100%;
@@ -261,8 +261,8 @@ a {
   color: var(--wf-red);
 }
 
-.header-menu .dropdown-item:not(.dropdown-heading):hover::after,
-.header-menu .dropdown-item:not(.dropdown-heading):focus::after {
+.header-menu .dropdown-item:hover::after,
+.header-menu .dropdown-item:focus::after {
   content: "";
   position: absolute;
   right: -1rem;
@@ -288,6 +288,11 @@ a {
 .header-menu .dropdown-heading:active {
   color: var(--wf-red);
   background: transparent;
+}
+
+.header-menu .dropdown-heading:hover::after,
+.header-menu .dropdown-heading:focus::after {
+  right: 10px;
 }
 
 
