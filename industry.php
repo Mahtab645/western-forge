@@ -158,9 +158,9 @@ $h = static function ($value) {
 
 <section class="cta-section industry-cta">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="cta-box text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <div class="cta-box">
                     <h2>Request a Quote</h2>
                     <p><?php echo $h($industry['cta']); ?></p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
