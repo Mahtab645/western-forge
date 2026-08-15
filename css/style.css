@@ -4683,9 +4683,9 @@ a {
   .product-copy p,
   .forging-quote-card p,
   .forging-benefits-copy p,
-  .about-who-copy p {
+  .about-who-copy p, li {
     font-size: 14px !important;
-    line-height: 1.6;
+    line-height: 2;
   }
 
   .page-hero-content p:last-of-type {
