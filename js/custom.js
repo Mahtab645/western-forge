@@ -90,15 +90,15 @@
         render(current);
     }
 
-    function initLpwBrands() {
-        var root = document.getElementById('lpw-brands');
+    function initTabSlider(rootId) {
+        var root = document.getElementById(rootId);
         if (!root) return;
 
-        var tabs = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-tablist [role="tab"]'));
-        var slides = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-slide'));
-        var dots = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-dots button'));
-        var track = document.getElementById('lpwBrandsTrack');
-        var viewport = document.getElementById('lpwBrandsViewport');
+        var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tablist"] [role="tab"]'));
+        var slides = Array.prototype.slice.call(root.querySelectorAll('[role="tabpanel"]'));
+        var dots = Array.prototype.slice.call(root.querySelectorAll('.lpw-brands-dots button, .flange-types-dots button'));
+        var track = root.querySelector('.lpw-brands-track, .flange-types-track');
+        var viewport = root.querySelector('.lpw-brands-viewport, .flange-types-viewport');
         var index = 0;
         var timer = null;
         var delay = 5500;
@@ -202,6 +202,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         initHeaderSearch();
         initProductSlider();
-        initLpwBrands();
+        initTabSlider('lpw-brands');
+        initTabSlider('flange-types');
     });
 })();

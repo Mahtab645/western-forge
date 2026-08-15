@@ -134,7 +134,7 @@ a {
   align-items: stretch;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  gap: clamp(10px, 0.9vw, 22px);
+      gap: clamp(10px, 1.9vw, 29px);
   margin: 0;
   padding: 0 0 0 90px;
   list-style: none;
@@ -2464,6 +2464,92 @@ a {
   }
 }
 
+.flange-types {
+  background: var(--wf-white);
+  padding: 72px 0 80px;
+}
+
+.flange-types .lpw-brands-tablist {
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 8px;
+}
+
+.flange-types .lpw-brands-tablist button {
+  flex: 0 0 auto;
+  min-width: 0;
+  height: 56px;
+}
+
+.flange-types .lpw-brands-tablist button span {
+  font-weight: 400;
+}
+
+.flange-types .lpw-brands-tablist button.is-active span,
+.flange-types .lpw-brands-tablist button:hover span {
+  font-weight: 700;
+}
+
+.flange-types .lpw-brands-tablist button span::after {
+  border-bottom: 4px solid var(--wf-red);
+}
+
+.flange-types-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.flange-types-media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.flange-types-copy h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: var(--wf-black);
+}
+
+.flange-types-copy .trust-list {
+  margin-bottom: 28px;
+}
+
+.flange-types-btn {
+  width: auto;
+  min-width: 168px;
+  margin-top: 0;
+  font-size: 15px;
+  padding: 14px 22px;
+}
+
+.flange-types-btn span {
+  margin-left: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .flange-types {
+    padding: 48px 0 56px;
+  }
+
+  .flange-types-copy h3 {
+    font-size: 26px;
+  }
+
+  .flange-types-media {
+    min-height: 200px;
+  }
+
+  .flange-types-media img {
+    max-height: 220px;
+  }
+}
+
 .contact-hero {
   background: var(--wf-black);
   padding: 100px 0;
@@ -3695,17 +3781,11 @@ a {
   position: relative;
   padding: 110px 0;
   background-color: #1a1a1a;
-  background-image: url("../images/bg-flanges.jpg");
+  background-image: url("../images/20250515_151112-1.webp");
   background-size: cover;
   background-position: center;
 }
 
-.cta-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(18, 18, 18, 0.72);
-}
 
 .cta-section .container {
   position: relative;

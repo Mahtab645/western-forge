@@ -98,6 +98,122 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="flange-types" id="flange-types">
+    <div class="container">
+        <div class="flange-types-tablist lpw-brands-tablist" role="tablist" aria-label="Flange types">
+            <?php
+            $flangeSlides = [
+                [
+                    'tab' => 'Weld Neck Flange',
+                    'title' => 'Weld Neck Flanges',
+                    'slug' => 'weld-neck-flanges',
+                    'image' => 'weld-neck.png',
+                    'points' => [
+                        'Preferred for high-pressure, subzero or elevated temperatures',
+                        'Hub is tapered and bored to match pipe’s inside diameter so flow is not restricted, preventing turbulence and reducing erosion',
+                        'Easily radiographed',
+                        'Provides excellent stress distribution',
+                    ],
+                ],
+                [
+                    'tab' => 'Slip-On Flange',
+                    'title' => 'Slip-On Flanges',
+                    'slug' => 'slip-on-flanges',
+                    'image' => 'slip-on.png',
+                    'points' => [
+                        'Not normally used in high-stress applications due to low hub and weld attachment',
+                        'Slips over outside of pipe',
+                        'Inside of flange welded at hub and end of pipe',
+                    ],
+                ],
+                [
+                    'tab' => 'Blind Flange',
+                    'title' => 'Blind Flanges',
+                    'slug' => 'blind-flanges',
+                    'image' => 'blind.png',
+                    'points' => [
+                        'Used to close ends of piping',
+                        'Has no bore',
+                        'Permits access to sealed lines',
+                    ],
+                ],
+                [
+                    'tab' => 'Socketweld Flange',
+                    'title' => 'Socket Weld Flanges',
+                    'slug' => 'socket-weld-flanges',
+                    'image' => 'socket-weld.png',
+                    'points' => [
+                        'For small-diameter chemical processes, hydraulic and steam distribution lines',
+                        'Similar to slip-on flange',
+                        'Counter bore matches pipe bore, allowing unrestricted flow',
+                        'Counter bore from hub side fits pipe’s outer diameter – can insert pipe in socket with fillet weld at hub',
+                    ],
+                ],
+                [
+                    'tab' => 'Threaded Flange',
+                    'title' => 'Threaded Flanges',
+                    'slug' => 'threaded-flanges',
+                    'image' => 'threaded.png',
+                    'points' => [
+                        'Used where welding would be hazardous',
+                        'Designed for low-pressure and non-cyclic applications',
+                        'Bore is threaded to match pipe thread',
+                        'Tapered to seal pipe and flange',
+                    ],
+                ],
+                [
+                    'tab' => 'Lap Joint Flange',
+                    'title' => 'Lap Joint Flanges',
+                    'slug' => 'lap-joint-flanges',
+                    'image' => 'lap-joint.png',
+                    'points' => [
+                        'Used where bolt alignment or access for cleaning is required',
+                        'Similar to slip-on flange when used with lap joint stub end',
+                        'Radius at intersection of flange face and bore to match lap joint stub end',
+                    ],
+                ],
+            ];
+            foreach ($flangeSlides as $i => $slide):
+            ?>
+            <button type="button" role="tab" id="flange-tab-<?php echo $i; ?>" aria-controls="flange-panel-<?php echo $i; ?>" aria-selected="<?php echo $i === 0 ? 'true' : 'false'; ?>" class="<?php echo $i === 0 ? 'is-active' : ''; ?>" tabindex="<?php echo $i === 0 ? '0' : '-1'; ?>"><span><?php echo htmlspecialchars($slide['tab'], ENT_QUOTES, 'UTF-8'); ?></span></button>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="flange-types-viewport lpw-brands-viewport" id="flangeTypesViewport">
+            <div class="flange-types-track lpw-brands-track" id="flangeTypesTrack">
+                <?php foreach ($flangeSlides as $i => $slide): ?>
+                <article class="flange-types-slide lpw-brands-slide<?php echo $i === 0 ? ' is-active' : ''; ?>" id="flange-panel-<?php echo $i; ?>" role="tabpanel" aria-labelledby="flange-tab-<?php echo $i; ?>" <?php echo $i === 0 ? '' : 'aria-hidden="true"'; ?>>
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-6">
+                            <div class="flange-types-media">
+                                <img src="<?php echo $baseUrl; ?>/images/products/<?php echo htmlspecialchars($slide['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($slide['title'], ENT_QUOTES, 'UTF-8'); ?>">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="flange-types-copy">
+                                <h3><?php echo htmlspecialchars($slide['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                                <ul class="trust-list">
+                                    <?php foreach ($slide['points'] as $point): ?>
+                                    <li><?php echo htmlspecialchars($point, ENT_QUOTES, 'UTF-8'); ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                                <a class="btn-view-products flange-types-btn" href="<?php echo wf_product_url($slide['slug'], $baseUrl); ?>">More Details <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <div class="flange-types-dots lpw-brands-dots" aria-label="Flange type slides">
+            <?php foreach ($flangeSlides as $i => $slide): ?>
+            <button type="button" class="<?php echo $i === 0 ? 'is-active' : ''; ?>" aria-label="Show <?php echo htmlspecialchars($slide['tab'], ENT_QUOTES, 'UTF-8'); ?>"<?php echo $i === 0 ? ' aria-current="true"' : ''; ?>></button>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
 <section class="forging-benefits">
     <div class="container">
         <h2>Benefits of Using a Forged Flange</h2>

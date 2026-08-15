@@ -92,21 +92,15 @@ $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool)
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="<?php echo $baseUrl; ?>/index.php#resources" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Resources</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/index.php#resources">Resources</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
+                   
+                    <!-- <li class="nav-item">
                         <button class="header-search-btn" type="button" id="searchToggle" aria-label="Search">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                 <path d="M7.825 15.31C3.605 15.31.17 11.875.17 7.655S3.605 0 7.825 0s7.655 3.435 7.655 7.655-3.435 7.655-7.655 7.655Zm0-13.815c-3.395 0-6.16 2.765-6.16 6.16s2.765 6.16 6.16 6.16 6.16-2.76 6.16-6.16-2.765-6.16-6.16-6.16Z" fill="#171819"/>
                                 <path d="m13.279 12.391-1.057 1.057 6.551 6.551 1.057-1.057-6.551-6.551Z" fill="#171819"/>
                             </svg>
                         </button>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="btn-contact" href="<?php echo $contactHref; ?>">Contact Us</a>
                     </li>

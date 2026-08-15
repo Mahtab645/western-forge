@@ -9,8 +9,7 @@ include __DIR__ . '/header.php';
         <div class="page-hero-content">
             <h1>Careers With Western Forge &amp; Flange</h1>
             <p>Join the Western Forge team for a rewarding career in forging.</p>
-            <a class="btn-hero btn-hero-primary" href="https://us251.dayforcehcm.com/CandidatePortal/en-US/lpwgroup/SITE/WFF-Jobs/" target="_blank" rel="noopener noreferrer">View Current Openings</a>
-        </div>
+            </div>
     </div>
 </section>
 
