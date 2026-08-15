@@ -23,16 +23,16 @@ include __DIR__ . '/header.php';
 
 <?php
 $flanges = [
-    ['name' => 'Weld Neck', 'file' => 'flange-weld-neck.webp'],
-    ['name' => 'Slip On', 'file' => 'flange-slip-on.webp'],
-    ['name' => 'Blind', 'file' => 'flange-blind.webp'],
-    ['name' => 'Socket Weld', 'file' => 'flange-socket-weld.webp'],
-    ['name' => 'Threaded', 'file' => 'flange-threaded.png'],
-    ['name' => 'Lap Joint', 'file' => 'flange-lap-joint.webp'],
-    ['name' => 'Stub End', 'file' => 'flange-stubb-end.webp'],
-    ['name' => 'Studding Outlet', 'file' => 'flange-studding-outlet.png'],
-    ['name' => 'Long Weld Neck', 'file' => 'flange-long-weld-neck.webp'],
-    ['name' => 'Orifice Set', 'file' => 'flange-orifice.png'],
+    ['name' => 'Weld Neck', 'file' => 'flange-weld-neck.webp', 'slug' => 'weld-neck-flanges'],
+    ['name' => 'Slip On', 'file' => 'flange-slip-on.webp', 'slug' => 'slip-on-flanges'],
+    ['name' => 'Blind', 'file' => 'flange-blind.webp', 'slug' => 'blind-flanges'],
+    ['name' => 'Socket Weld', 'file' => 'flange-socket-weld.webp', 'slug' => 'socket-weld-flanges'],
+    ['name' => 'Threaded', 'file' => 'flange-threaded.png', 'slug' => 'threaded-flanges'],
+    ['name' => 'Lap Joint', 'file' => 'flange-lap-joint.webp', 'slug' => 'lap-joint-flanges'],
+    ['name' => 'Stub End', 'file' => 'flange-stubb-end.webp', 'slug' => 'stub-end-flanges'],
+    ['name' => 'Studding Outlet', 'file' => 'flange-studding-outlet.png', 'slug' => 'studding-outlet-flanges'],
+    ['name' => 'Long Weld Neck', 'file' => 'flange-long-weld-neck.webp', 'slug' => 'long-weld-neck-flanges'],
+    ['name' => 'Orifice Set', 'file' => 'flange-orifice.png', 'slug' => 'orifice-set-flanges'],
 ];
 foreach ($flanges as $i => $flange) {
     $path = __DIR__ . '/images/' . $flange['file'];
@@ -92,15 +92,15 @@ $startIndex = 7;
         <div class="row g-4 product-card-grid">
             <?php
             $productCards = [
-                ['label' => 'Weld Neck Flanges', 'file' => 'flange-weld-neck.webp'],
-                ['label' => 'Slip-on Flanges', 'file' => 'flange-slip-on.webp'],
-                ['label' => 'Blind Flanges', 'file' => 'flange-blind.webp'],
-                ['label' => 'Socket Weld Flanges', 'file' => 'flange-socket-weld.webp'],
-                ['label' => 'Lap Joint Flanges', 'file' => 'flange-lap-joint.webp'],
-                ['label' => 'Stub Ends', 'file' => 'flange-stubb-end.webp'],
-                ['label' => 'Studding Outlet Flanges', 'file' => 'flange-studding-outlet.png'],
-                ['label' => 'Long Weld Neck Flanges', 'file' => 'flange-long-weld-neck.webp'],
-                ['label' => 'Orifice Sets', 'file' => 'flange-orifice.png'],
+                ['label' => 'Weld Neck Flanges', 'file' => 'flange-weld-neck.webp', 'slug' => 'weld-neck-flanges'],
+                ['label' => 'Slip-on Flanges', 'file' => 'flange-slip-on.webp', 'slug' => 'slip-on-flanges'],
+                ['label' => 'Blind Flanges', 'file' => 'flange-blind.webp', 'slug' => 'blind-flanges'],
+                ['label' => 'Socket Weld Flanges', 'file' => 'flange-socket-weld.webp', 'slug' => 'socket-weld-flanges'],
+                ['label' => 'Lap Joint Flanges', 'file' => 'flange-lap-joint.webp', 'slug' => 'lap-joint-flanges'],
+                ['label' => 'Stub Ends', 'file' => 'flange-stubb-end.webp', 'slug' => 'stub-end-flanges'],
+                ['label' => 'Studding Outlet Flanges', 'file' => 'flange-studding-outlet.png', 'slug' => 'studding-outlet-flanges'],
+                ['label' => 'Long Weld Neck Flanges', 'file' => 'flange-long-weld-neck.webp', 'slug' => 'long-weld-neck-flanges'],
+                ['label' => 'Orifice Sets', 'file' => 'flange-orifice.png', 'slug' => 'orifice-set-flanges'],
             ];
             foreach ($productCards as $i => $card) {
                 $path = __DIR__ . '/images/' . $card['file'];
@@ -116,7 +116,7 @@ $startIndex = 7;
             foreach ($productCards as $card):
             ?>
             <div class="col-md-6 col-lg-4">
-                <a class="product-card" href="#products">
+                <a class="product-card" href="<?php echo wf_product_url($card['slug'], $baseUrl); ?>">
                     <span class="product-card-arrow" aria-hidden="true">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                             <path d="M7 17 17 7M9 7h8v8" stroke="#e0393e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
