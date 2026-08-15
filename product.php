@@ -1,7 +1,17 @@
 <?php
 require_once __DIR__ . '/includes/products.php';
 
-$slug = isset($_GET['slug']) ? strtolower(trim((string) $_GET['slug'])) : '';
+$slug = wf_request_product_slug();
+$requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '';
+if ($slug && preg_match('#/product\.php$#', $requestPath)) {
+    $prefix = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
+    if ($prefix === '.' || $prefix === '\\') {
+        $prefix = '';
+    }
+    header('Location: ' . $prefix . '/products/' . rawurlencode($slug) . '/', true, 301);
+    exit;
+}
+
 $product = wf_get_product($slug);
 
 if (!$product) {

@@ -2,16 +2,22 @@
 if (!isset($pageTitle)) {
     $pageTitle = 'Western Forge & Flange';
 }
-$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? ''));
-$baseUrl = rtrim($scriptDir, '/');
+$docRoot = str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'] ?? '') ?: rtrim(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT'] ?? ''), '/'));
+$siteRoot = str_replace('\\', '/', realpath(__DIR__) ?: __DIR__);
+if ($docRoot && $siteRoot && strpos($siteRoot, $docRoot) === 0) {
+    $baseUrl = substr($siteRoot, strlen($docRoot));
+} else {
+    $baseUrl = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
+}
+$baseUrl = rtrim(str_replace('\\', '/', (string) $baseUrl), '/');
 if ($baseUrl === '.' || $baseUrl === '\\') {
     $baseUrl = '';
 }
 $currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
 $contactHref = $baseUrl . '/contact.php';
 require_once __DIR__ . '/includes/products.php';
-$currentProductSlug = isset($_GET['slug']) ? strtolower(trim((string) $_GET['slug'])) : '';
-$isProductPage = $currentPage === 'product.php';
+$currentProductSlug = wf_request_product_slug();
+$isProductPage = $currentProductSlug !== '' && wf_get_product($currentProductSlug);
 ?>
 <!DOCTYPE html>
 <html lang="en">

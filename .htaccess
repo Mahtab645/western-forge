@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^products/([a-z0-9-]+)$ %{REQUEST_URI}/ [R=301,L]
+
+RewriteRule ^products/([a-z0-9-]+)/$ product.php?slug=$1 [L,QSA]

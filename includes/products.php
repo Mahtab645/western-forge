@@ -2,7 +2,21 @@
 
 function wf_product_url($slug, $baseUrl = '')
 {
-    return rtrim((string) $baseUrl, '/') . '/product.php?slug=' . rawurlencode($slug);
+    return rtrim((string) $baseUrl, '/') . '/products/' . rawurlencode($slug) . '/';
+}
+
+function wf_request_product_slug()
+{
+    if (!empty($_GET['slug'])) {
+        return strtolower(trim((string) $_GET['slug']));
+    }
+
+    $path = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
+    if (is_string($path) && preg_match('#/products/([a-z0-9-]+)/?$#', $path, $matches)) {
+        return strtolower($matches[1]);
+    }
+
+    return '';
 }
 
 function wf_product_image($file, $baseUrl = '')
