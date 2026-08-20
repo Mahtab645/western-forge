@@ -982,6 +982,17 @@ a {
   margin-bottom: 32px;
 }
 
+.custom-apps .trust-list {
+  max-width: 920px;
+}
+
+.custom-apps-note {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3a3d40;
+  margin: 24px 0 0;
+}
+
 .custom-shapes {
   background: var(--wf-white);
   padding: 100px 0;
@@ -1160,14 +1171,24 @@ a {
   letter-spacing: 0.02em;
 }
 
-.custom-materials .about-journey-copy a {
+.custom-materials .about-journey-copy a:not(.btn-view-products) {
   color: var(--wf-white);
   text-decoration: underline;
 }
 
-.custom-materials .about-journey-copy a:hover,
-.custom-materials .about-journey-copy a:focus {
+.custom-materials .about-journey-copy a:not(.btn-view-products):hover,
+.custom-materials .about-journey-copy a:not(.btn-view-products):focus {
   color: var(--wf-red);
+}
+
+.custom-materials .about-journey-copy .btn-view-products {
+  margin-top: 28px;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.custom-materials .about-journey-copy p + p {
+  margin-top: 18px;
 }
 
 .custom-materials .about-journey-media {

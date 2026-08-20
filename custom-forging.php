@@ -9,7 +9,7 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="page-hero-content">
             <h1>Custom Forging Solutions</h1>
-            <p>Precision parts, prototypes, and specials forged quickly from premium and exotic alloys.</p>
+            <p>Forged Solutions. Engineered Around Your Requirements.</p>
             <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
         </div>
     </div>
@@ -21,13 +21,16 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/custom-offer.png" alt="Custom forged flanges from Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/custom-offer.png" alt="Custom forged components from STELVERA FORGE S.p.A.">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="about-who-copy forging-flange-copy">
                     <h2>What We Offer</h2>
-                    <p>At Western Forge &amp; Flange, we support fabricators, end-users, and distributors with our custom parts, rough forgings (rings, bars, discs, bars), specials, and prototypes. We pride ourselves on offering high-quality materials, fast turnaround times, and adherence to strict quality control standards. Contact us when you need forgings that meet tight tolerances, have unique dimensions, or need to resist pressure, stress, or extreme temperatures.</p>
+                    <p class="section-kicker">Forged Solutions. Engineered Around Your Requirements.</p>
+                    <p>STELVERA FORGE S.p.A. supports fabricators, distributors and industrial end-users with custom forgings, rough forgings, special components and project-specific solutions.</p>
+                    <p>Our capabilities include rings, blocks, bars, discs, special flanges and engineered forgings, manufactured to customer drawings, dimensional requirements and applicable specifications.</p>
+                    <p>With a focus on material integrity, precision and quality control, we deliver components engineered for demanding pressure, temperature and mechanical service conditions.</p>
                 </div>
             </div>
         </div>
@@ -35,14 +38,17 @@ include __DIR__ . '/header.php';
         <div class="row align-items-center g-5 custom-emergency-row">
             <div class="col-lg-6 order-2 order-lg-1">
                 <div class="about-who-copy forging-flange-copy">
-                    <h2>Emergency Production and Large Contracts</h2>
-                    <p>When you’re experiencing costly downtime, you need custom parts in days, not months. Western Forge &amp; Flange’s large inventory of materials allows us to pivot quickly and fulfill your emergency order. Alternatively, we’re just as capable of scaling up to fulfill large, long-term contracts for custom forged components.</p>
+                    <h2>Flexible Production &amp; Project Supply</h2>
+                    <p class="section-kicker">From Urgent Requirements to Long-Term Contracts.</p>
+                    <p>STELVERA FORGE S.p.A. provides flexible manufacturing support for urgent requirements, project-based orders and large-volume contracts.</p>
+                    <p>Our responsive production approach enables us to support critical delivery schedules while maintaining consistent quality, traceability and technical compliance.</p>
+                    <p>From a single custom forging to ongoing project supply, we deliver reliable solutions tailored to your requirements.</p>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/custom-emergency.png" alt="Rows of machined forged discs at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/custom-emergency.png" alt="Custom forged discs manufactured by STELVERA FORGE S.p.A.">
                 </div>
             </div>
         </div>
@@ -53,14 +59,17 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="about-apart-intro">
             <h2>Specialized Applications</h2>
-            <p>Over our 80+ years in business, Western Forge &amp; Flange has delivered highly specialized parts for applications including:</p>
+            <p class="section-kicker">Engineered for Demanding Environments.</p>
+            <p>STELVERA FORGE S.p.A. manufactures specialized forged components for applications requiring strength, precision and reliable performance.</p>
         </div>
-        <ul class="about-compliance-list">
-            <li>Heavy-duty flanges and forgings for use in abrasive petrochemical plants.</li>
-            <li>Aerospace prototype components for commercial rockets.</li>
-            <li>Naval and marine hardware adhering to strict U.S. sourcing requirements.</li>
-            <li>Nuclear-standard-compliant forgings for reactor environments.</li>
+        <ul class="trust-list">
+            <li><strong>Oil &amp; Gas</strong> Forgings for high-pressure and critical-service applications.</li>
+            <li><strong>Petrochemical &amp; Chemical</strong> Components for demanding process environments.</li>
+            <li><strong>Power &amp; Energy</strong> Engineered forgings for pressure and temperature-intensive service.</li>
+            <li><strong>Marine &amp; Shipbuilding</strong> Durable forged components for marine applications.</li>
+            <li><strong>Industrial Engineering</strong> Custom parts manufactured to drawings and project specifications.</li>
         </ul>
+        <p class="custom-apps-note">Special materials, dimensions and configurations are available on request.</p>
     </div>
 </section>
 
@@ -76,7 +85,7 @@ include __DIR__ . '/header.php';
             ['label' => 'Aluminum Grades', 'detail' => '1100, 3003, 6061 and 5083'],
             ['label' => 'Chromes-Moly', 'detail' => 'F-5, F-9, F-11 and F-22'],
         ];
-        $shapeCerts = 'ISO 9001:2015, PED 2014/68/EU, Canadian Registration Numbers (CRN’s: Nuclear and Non-Nuclear), AIS, NCA3800, 10CFR50, 10CFR21, CSA N285.0, CSA B51, NQA-1, EB2678, MIL-I-45208A, DFARS, NACE, EN 10204 3.1';
+        $shapeCerts = 'ISO, PED, ASTM, ASME, EN and customer/project specifications';
         $shapes = [
             ['id' => 'rings', 'title' => 'Rings', 'tab' => 'Custom Rings', 'file' => 'icon-rings.png', 'size' => 'Up to 75″ in Diameter'],
             ['id' => 'discs', 'title' => 'Discs', 'tab' => 'Custom Discs', 'file' => 'icon-discs.png', 'size' => 'Up to 50″ in Diameter'],
@@ -131,13 +140,17 @@ include __DIR__ . '/header.php';
     <div class="row g-0 align-items-stretch">
         <div class="col-lg-6 d-flex">
             <div class="about-journey-copy">
-                <h2>Materials and Quality Standards</h2>
-                <p>Western Forge &amp; Flange offers over 80 materials, including stainless steels, as well as high-nickel and exotic alloys. We are certified to ISO 9001:2015 and comply with PED, PER, NRC, DFARS, ITAR, CFSI, and other key standards, including nuclear and military specifications. Our meticulous internal quality process includes joint inspection in collaboration with <a href="https://pennmachine.com" target="_blank" rel="noopener noreferrer">Penn Machine</a> on select projects.</p>
+                <h2>Materials &amp; Quality Standards</h2>
+                <p class="section-kicker">Material Expertise. Controlled Quality.</p>
+                <p>STELVERA FORGE S.p.A. manufactures forged components in a broad range of carbon steels, alloy steels, stainless steels, duplex, super duplex, nickel alloys and special grades.</p>
+                <p>Our manufacturing and inspection processes are designed to meet applicable ASTM, ASME, EN, ISO, PED and customer-specific requirements, with a strong focus on material traceability and documented quality.</p>
+                <p>From material verification to final inspection, every stage is carefully controlled to ensure consistency, dimensional accuracy and reliable performance.</p>
+                <a class="btn-view-products" href="<?php echo $baseUrl; ?>/quality-certifications.php">View Materials &amp; Quality Standards</a>
             </div>
         </div>
         <div class="col-lg-6">
             <div class="about-journey-media">
-                <img src="<?php echo $baseUrl; ?>/images/custom-materials.jpg" alt="Forging operations at the Western Forge &amp; Flange facility">
+                <img src="<?php echo $baseUrl; ?>/images/custom-materials.jpg" alt="Forging operations at STELVERA FORGE S.p.A.">
             </div>
         </div>
     </div>
@@ -173,19 +186,23 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/custom-why.jpg" alt="Western Forge &amp; Flange team on the plant floor">
+                    <img src="<?php echo $baseUrl; ?>/images/custom-why.jpg" alt="STELVERA FORGE S.p.A. manufacturing team">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="about-who-copy forging-flange-copy">
                     <h2>Why Work With Us?</h2>
-                    <p>Western Forge &amp; Flange is your ideal partner for forging. We offer:</p>
-                    <ul class="about-compliance-list">
-                        <li>Decades of forging experience since our founding in 1944.</li>
-                        <li>Fast quotes and on-time delivery enabled by our strong inventory.</li>
-                        <li>Expertise with special jobs, fast-turnaround prototypes, and large-scale orders.</li>
-                        <li>Proven service in the highly regulated and demanding nuclear, petrochemical, marine, defense, power, and aerospace industries.</li>
+                    <p class="section-kicker">A Reliable Partner for Forged Solutions.</p>
+                    <p>STELVERA FORGE S.p.A. combines engineering expertise, manufacturing flexibility and controlled quality to support demanding industrial requirements.</p>
+                    <ul class="trust-list">
+                        <li><strong>Forging Expertise</strong> Standard and custom-engineered forged components.</li>
+                        <li><strong>Flexible Production</strong> From individual special parts to large-volume project orders.</li>
+                        <li><strong>Material Capability</strong> Carbon, alloy, stainless, duplex and special alloy grades.</li>
+                        <li><strong>Quality &amp; Traceability</strong> Controlled manufacturing, inspection and documented material traceability.</li>
+                        <li><strong>Responsive Service</strong> Efficient support from enquiry through production and delivery.</li>
+                        <li><strong>Global Industries</strong> Solutions for oil &amp; gas, petrochemical, power, marine and industrial applications.</li>
                     </ul>
+                    <p class="section-tagline">Precision. Flexibility. Reliability.</p>
                 </div>
             </div>
         </div>
@@ -197,7 +214,7 @@ include __DIR__ . '/header.php';
         <div class="row align-items-start custom-resources-row">
             <div class="col-lg-6">
                 <h2>Helpful Resources and Certifications</h2>
-                <p>You can verify that Western Forge &amp; Flange is the right partner for your next demanding custom forging project by reviewing our certifications (including ISO 9001:2015, nuclear, and military standard adherence), available forging dimensions and materials, and content from our Forging 101 section.</p>
+                <p>Review our quality standards, inspection processes, material grades and technical resources to confirm STELVERA FORGE S.p.A. is the right partner for your next custom forging project.</p>
             </div>
             <div class="col-lg-6">
                 <a class="btn-hero btn-long-outline" href="<?php echo $baseUrl; ?>/index.php#resources">See All Resources</a>
