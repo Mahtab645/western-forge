@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'High-Quality Flanges and Forgings | Western Forge & Flange';
+$pageTitle = 'Forged Flanges & Custom Forgings | STELVERA FORGE';
+$pageDescription = 'STELVERA FORGE S.p.A. manufactures high-integrity flanges and forged components for critical industrial applications, with a focus on precision, quality and strength in every connection.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -11,8 +12,8 @@ include __DIR__ . '/header.php';
 
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">High-Quality Flanges and Custom Forgings, Delivered Fast</h1>
-            <p class="hero-subtitle">Expertly forged flanges and specialized products, trusted by diverse industries worldwide since 1944.</p>
+            <h1 class="hero-title">High-Quality Flanges and Custom Forgings</h1>
+            <p class="hero-subtitle">Precision in manufacturing. Confidence in service. Strength in every connection.</p>
             <div class="hero-actions">
                 <a class="btn-hero btn-hero-primary" href="#products">Explore Products</a>
                 <a class="btn-hero btn-hero-outline" href="#contact">Request a Quote</a>
@@ -84,8 +85,10 @@ $startIndex = 7;
     <div class="container">
         <div class="products-explore-intro">
             <h2>Explore Our Products and Capabilities</h2>
-            <p>At Western Forge &amp; Flange, we provide single-run and multiple-run flanges and forged shapes up to 2,500 pounds, serving a global client base across industries and functions. Our U.S. materials-sourcing and inspection processes are designed to deliver reliable quality.</p>
-            <p>This includes a diverse range of flanges: weld neck, slip-on, blind, socket weld, threaded, lap joint, stub end, studding outlet, long weld neck, and orifice set. We can also produce specialized parts to suit your measurements.</p>
+            <p>STELVERA FORGE S.p.A. manufactures high-integrity flanges and forged components for critical industrial applications. Our approach combines advanced forging expertise, precision machining and controlled manufacturing processes to deliver consistent quality across every production stage.</p>
+            <p>Our manufacturing range includes Weld Neck, Blind, Slip-On, Socket Weld, Threaded, Lap Joint, Long Weld Neck, Orifice and special flanges, together with engineered forgings produced to customer drawings and project specifications.</p>
+            <p>From material selection to final inspection, each component is manufactured with a clear focus on dimensional accuracy, traceability and reliable performance.</p>
+            <p class="section-tagline">Precision in manufacturing. Confidence in service. Strength in every connection.</p>
             <h3>Flanges</h3>
         </div>
 
@@ -93,14 +96,14 @@ $startIndex = 7;
             <?php
             $productCards = [
                 ['label' => 'Weld Neck Flanges', 'file' => 'flange-weld-neck.webp', 'slug' => 'weld-neck-flanges'],
-                ['label' => 'Slip-on Flanges', 'file' => 'flange-slip-on.webp', 'slug' => 'slip-on-flanges'],
                 ['label' => 'Blind Flanges', 'file' => 'flange-blind.webp', 'slug' => 'blind-flanges'],
+                ['label' => 'Slip-on Flanges', 'file' => 'flange-slip-on.webp', 'slug' => 'slip-on-flanges'],
                 ['label' => 'Socket Weld Flanges', 'file' => 'flange-socket-weld.webp', 'slug' => 'socket-weld-flanges'],
+                ['label' => 'Threaded Flanges', 'file' => 'flange-threaded.png', 'slug' => 'threaded-flanges'],
                 ['label' => 'Lap Joint Flanges', 'file' => 'flange-lap-joint.webp', 'slug' => 'lap-joint-flanges'],
-                ['label' => 'Stub Ends', 'file' => 'flange-stubb-end.webp', 'slug' => 'stub-end-flanges'],
-                ['label' => 'Studding Outlet Flanges', 'file' => 'flange-studding-outlet.png', 'slug' => 'studding-outlet-flanges'],
                 ['label' => 'Long Weld Neck Flanges', 'file' => 'flange-long-weld-neck.webp', 'slug' => 'long-weld-neck-flanges'],
                 ['label' => 'Orifice Sets', 'file' => 'flange-orifice.png', 'slug' => 'orifice-set-flanges'],
+                ['label' => 'Special Flanges', 'file' => 'flange-studding-outlet.png', 'slug' => 'other-flanges'],
             ];
             foreach ($productCards as $i => $card) {
                 $path = __DIR__ . '/images/' . $card['file'];
@@ -141,19 +144,23 @@ $startIndex = 7;
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <h2>Why Our Customers Trust Us</h2>
-                <p class="trust-lead">Companies across the world feel confident coming to Western Forge &amp; Flange with their most demanding needs. They know they can count on our experts and facilities to forge reliable products that meet exacting specifications.</p>
-                <h3>We offer:</h3>
+                <h2>Why Customers Choose STELVERA</h2>
+                <p class="trust-lead">Across demanding industrial sectors, customers choose STELVERA FORGE S.p.A. for our commitment to precision, material integrity and dependable manufacturing. From standard flanges to complex custom forgings, every component is produced with careful attention to specification, quality and performance.</p>
+                <h3>Our strengths include:</h3>
                 <ul class="trust-list">
-                    <li>Rush capabilities, with quotes in minutes and a five-day emergency turnaround time.</li>
-                    <li>Experience and know-how built over 80+ years in business.</li>
-                    <li>A lineup of U.S.-sourced stainless and exotic alloys.</li>
-                    <li>Quality program that has been proven with a wide variety of certifications, from ISO to the most stringent nuclear certifications in the industry.</li>
+                    <li><strong>Engineering Expertise</strong> Technical know-how for standard, special and project-specific forged components.</li>
+                    <li><strong>Flexible Manufacturing</strong> Capability to support both individual requirements and larger production quantities.</li>
+                    <li><strong>Material Versatility</strong> Manufacturing across carbon, alloy, stainless, duplex and special alloy grades.</li>
+                    <li><strong>Precision &amp; Quality</strong> Controlled manufacturing, machining and inspection processes focused on consistent product quality.</li>
+                    <li><strong>Full Traceability</strong> Structured material identification and documentation throughout the manufacturing process.</li>
+                    <li><strong>Custom Solutions</strong> Components manufactured to customer drawings, dimensions and technical specifications.</li>
+                    <li><strong>Reliable Service</strong> Responsive technical support from enquiry through production and final delivery.</li>
                 </ul>
+                <p class="section-tagline trust-tagline">Precision Forged. Quality Assured. Strength in Every Connection.</p>
             </div>
             <div class="col-lg-6">
                 <div class="ratio ratio-16x9 trust-video">
-                    <iframe src="https://www.youtube.com/embed/aiH00reL7mc" title="Western Forge and Flange - High Nickel Alloys" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/aiH00reL7mc" title="STELVERA FORGE S.p.A. - High Nickel Alloys" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -164,7 +171,8 @@ $startIndex = 7;
     <div class="container">
         <div class="forging-intro">
             <h2>Custom Forging Solutions</h2>
-            <p>We’re ready to forge parts that meet your most exacting needs. These include specialty engineered products, from applications as simple as a water treatment plant to prototypes for aerospace rockets and nuclear submarines for the Navy. We work with a variety of advanced corrosion- and heat-resistant alloys, and can provide expedited turnarounds to meet your demands.</p>
+            <p class="section-kicker">Precision Forged to Your Specifications.</p>
+            <p>STELVERA FORGE S.p.A. manufactures custom forged components in carbon, alloy, stainless and special steels, engineered for demanding industrial applications.</p>
         </div>
 
         <div class="row g-4 forging-grid">
@@ -202,15 +210,16 @@ $startIndex = 7;
 
             <div class="col-md-6 col-lg-8">
                 <div class="forging-cta">
-                    <h3>Learn more about Custom Forgings</h3>
-                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/custom-forging.php">Learn More</a>
+                    <p class="forging-note">Custom sizes and special forgings available to customer drawings and specifications.</p>
+                    <h3>Explore Custom Forgings</h3>
+                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/custom-forging.php">Explore Custom Forgings</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="materials-section">
+<section class="materials-section" id="materials">
     <div class="container">
          <h2>Material Grades</h2>
         <div class="row g-5 align-items-start">
@@ -237,11 +246,31 @@ $startIndex = 7;
 
 <section class="industries-section" id="industries">
     <div class="container">
-        <h2>Industries We Support</h2>
-        <p class="industries-lead">Companies that require high-performance forged products trust Western Forge &amp; Flange to provide the highest level of engineered components to meet a multitude of applications across a wide spectrum of industries.</p>
+        <h2>Industries We Serve</h2>
+        <p class="section-kicker industries-kicker">Forged Solutions for Critical Industries</p>
+        <p class="industries-lead">STELVERA FORGE S.p.A. delivers precision-engineered flanges and forged components for demanding applications across global industries.</p>
         <ul class="industries-list">
-            <?php foreach (wf_industries() as $item): ?>
-            <li><a href="<?php echo wf_industry_url($item['slug'], $baseUrl); ?>"><?php echo htmlspecialchars($item['card'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+            <?php
+            $homeIndustries = [
+                ['label' => 'Oil & Gas', 'slug' => 'oil-gas'],
+                ['label' => 'Petrochemical & Chemical', 'slug' => 'chemical-petrochemical'],
+                ['label' => 'LNG', 'slug' => 'lng'],
+                ['label' => 'Power Generation', 'slug' => 'power-generation'],
+                ['label' => 'Renewable Energy', 'slug' => 'renewable-fuels'],
+                ['label' => 'Marine & Shipbuilding', 'slug' => 'marine-shipbuilding'],
+                ['label' => 'Nuclear', 'slug' => 'nuclear'],
+                ['label' => 'Mining', 'slug' => 'mining'],
+                ['label' => 'Pulp & Paper', 'slug' => 'pulp-paper'],
+                ['label' => 'Pharmaceutical', 'slug' => 'pharmaceuticals'],
+                ['label' => 'Water Treatment', 'slug' => ''],
+                ['label' => 'Industrial Engineering', 'slug' => ''],
+            ];
+            foreach ($homeIndustries as $item):
+                $industryHref = $item['slug'] !== ''
+                    ? wf_industry_url($item['slug'], $baseUrl)
+                    : wf_industries_listing_url($baseUrl);
+            ?>
+            <li><a href="<?php echo $industryHref; ?>"><?php echo htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8'); ?></a></li>
             <?php endforeach; ?>
         </ul>
         <a class="btn-view-products" href="<?php echo wf_industries_listing_url($baseUrl); ?>">Explore Industries</a>
@@ -254,13 +283,14 @@ $startIndex = 7;
             <div class="col-lg-6">
                 <div class="quality-media">
                     <span class="quality-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/quality-testing.jpg" alt="Quality testing at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/quality-testing.jpg" alt="Quality testing at STELVERA FORGE S.p.A.">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="quality-copy">
-                    <h2>Quality You Can Trust</h2>
-                    <p>Our services are backed by a variety of certifications, attesting to the quality and precision of our work. Western Forge &amp; Flange is the holder of approvals from ISO, PED, PER, and more, as well as Canadian nuclear and non-nuclear standards, alongside federal and military approvals. Our compliance documentation is downloadable and ready for your inspection.</p>
+                    <h2>Quality Without Compromise</h2>
+                    <p>Quality is integrated into every stage of manufacturing at STELVERA FORGE S.p.A. Our controlled processes, inspection procedures and material traceability ensure consistent compliance with applicable international standards and customer specifications.</p>
+                    <p class="section-spec-line">ISO &middot; PED &middot; EN &middot; ASME &middot; ASTM</p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/quality-certifications.php">View Certifications</a>
                 </div>
             </div>
@@ -272,15 +302,19 @@ $startIndex = 7;
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <h2>Helpful Resources</h2>
-                <p>To make sure your needs perfectly align with our capabilities, we offer a number of technical guides and informative resources. Checking these makes specifying easy for your team.</p>
+                <h2>Technical Resources</h2>
+                <p>Access essential technical information to simplify material selection, specifications and project requirements.</p>
+                <p class="section-spec-line">Standards &middot; Materials &middot; Dimensions &middot; Pressure Ratings &middot; Technical Data</p>
             </div>
             <div class="col-lg-6">
                 <div class="resource-links">
-                    <a href="#resources">Flange Dimensions <span aria-hidden="true">&rarr;</span></a>
-                    <a href="#resources">Dimensional Tolerances <span aria-hidden="true">&rarr;</span></a>
-                    <a href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101 <span aria-hidden="true">&rarr;</span></a>
+                    <a href="<?php echo $baseUrl; ?>/quality-certifications.php">Standards <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#materials">Materials <span aria-hidden="true">&rarr;</span></a>
+                    <a href="<?php echo $baseUrl; ?>/forging-101.php">Dimensions <span aria-hidden="true">&rarr;</span></a>
+                    <a href="<?php echo $baseUrl; ?>/forging-101.php">Pressure Ratings <span aria-hidden="true">&rarr;</span></a>
+                    <a href="<?php echo $baseUrl; ?>/forging-101.php">Technical Data <span aria-hidden="true">&rarr;</span></a>
                  </div>
+                <a class="btn-view-products resource-explore-btn" href="<?php echo $baseUrl; ?>/forging-101.php">Explore Resources</a>
             </div>
         </div>
     </div>
@@ -292,8 +326,8 @@ $startIndex = 7;
             <div class="col-lg-6">
                 <div class="cta-box">
                     <h2>Ready To Get Started?</h2>
-                    <p>Once you reach out to Western Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
-                    <a class="btn-view-products" href="#contact">Request a Quote</a>
+                    <p>Once you reach out to STELVERA FORGE S.p.A., you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
+                    <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
                 </div>
             </div>
         </div>

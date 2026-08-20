@@ -3335,6 +3335,29 @@ a {
   margin: 0 0 18px;
 }
 
+.section-tagline {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--wf-black);
+  margin: 8px 0 0;
+}
+
+.section-kicker {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--wf-red);
+  margin: 0 0 16px;
+}
+
+.section-spec-line {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--wf-black);
+  margin: 0 0 24px;
+}
+
 .products-explore-intro h3 {
   font-size: 32px;
   font-weight: 700;
@@ -3408,7 +3431,8 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
-  width: 216px;
+  width: auto;
+  min-width: 216px;
   padding: 21px 28px;
   border: 0;
   border-radius: 0;
@@ -3488,6 +3512,17 @@ a {
   padding-bottom: 0;
 }
 
+.trust-list li strong {
+  display: block;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.trust-tagline {
+  margin: 24px 0 0;
+  font-style: italic;
+}
+
 .trust-list li::before {
   content: "";
   position: absolute;
@@ -3545,6 +3580,18 @@ a {
   line-height: 1.7;
   color: #3a3d40;
   margin: 0;
+}
+
+.forging-intro .section-kicker {
+  margin: 0 0 18px;
+}
+
+.forging-note {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a3d40;
+  margin: 0 0 16px;
+  max-width: 420px;
 }
 
 .forging-card {
@@ -3774,6 +3821,11 @@ a {
   margin: 0 0 20px;
 }
 
+.industries-kicker {
+  color: var(--wf-red);
+  margin: 0 0 12px;
+}
+
 .industries-lead {
   font-size: 18px;
   line-height: 1.7;
@@ -3888,6 +3940,10 @@ a {
   margin: 0 0 28px;
 }
 
+.quality-copy .section-spec-line {
+  margin: 0 0 28px;
+}
+
 @media (max-width: 767.98px) {
   .quality-section {
     padding: 56px 0;
@@ -3925,6 +3981,15 @@ a {
   color: #3a3d40;
   margin: 0;
   max-width: 520px;
+}
+
+.resources-section .section-spec-line {
+  margin: 20px 0 0;
+  max-width: none;
+}
+
+.resource-explore-btn {
+  margin-top: 24px;
 }
 
 .resource-links {
