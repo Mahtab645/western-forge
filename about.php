@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'About Us | Western Forge & Flange';
+$pageTitle = 'About STELVERA FORGE | European Forging Manufacturer';
+$pageDescription = 'Discover STELVERA FORGE S.p.A., a manufacturer focused on precision forging, engineered flanges, quality and reliable industrial solutions.';
 include __DIR__ . '/header.php';
 ?>
 

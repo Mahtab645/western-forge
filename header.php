@@ -1,6 +1,6 @@
 <?php
 if (!isset($pageTitle)) {
-    $pageTitle = 'Western Forge & Flange';
+    $pageTitle = 'STELVERA FORGE';
 }
 $docRoot = str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'] ?? '') ?: rtrim(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT'] ?? ''), '/'));
 $siteRoot = str_replace('\\', '/', realpath(__DIR__) ?: __DIR__);
@@ -28,7 +28,7 @@ if (!isset($isIndustriesListing)) {
 $isProductPage = $isProductsListing || ($currentProductSlug !== '' && (bool) wf_get_product($currentProductSlug));
 $isIndustryPage = $isIndustriesListing || ($currentIndustrySlug !== '' && (bool) wf_get_industry($currentIndustrySlug));
 if (!isset($pageDescription)) {
-    $pageDescription = 'Expertly forged flanges and specialized products, trusted by diverse industries worldwide since 1944.';
+    $pageDescription = 'STELVERA FORGE S.p.A. manufactures high-integrity flanges and forged components for critical industrial applications.';
 }
 $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
@@ -51,14 +51,14 @@ $ogLogo = $siteAbs . '/images/logo.png';
     <link rel="icon" type="image/png" href="<?php echo htmlspecialchars($ogLogo, ENT_QUOTES, 'UTF-8'); ?>">
     <link rel="apple-touch-icon" href="<?php echo htmlspecialchars($ogLogo, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Western Forge &amp; Flange">
+    <meta property="og:site_name" content="STELVERA FORGE">
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image:alt" content="Western Forge &amp; Flange">
+    <meta property="og:image:alt" content="STELVERA FORGE">
     <meta property="og:image" content="<?php echo htmlspecialchars($ogLogo, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image:alt" content="Western Forge &amp; Flange logo">
+    <meta property="og:image:alt" content="STELVERA FORGE logo">
     <meta property="og:logo" content="<?php echo htmlspecialchars($ogLogo, ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
@@ -68,7 +68,7 @@ $ogLogo = $siteAbs . '/images/logo.png';
     <?php echo json_encode([
         '@context' => 'https://schema.org',
         '@type' => 'Organization',
-        'name' => 'Western Forge & Flange',
+        'name' => 'STELVERA FORGE S.p.A.',
         'url' => $siteAbs . '/index.php',
         'logo' => $ogLogo,
         'image' => $ogImage,
@@ -92,9 +92,7 @@ $ogLogo = $siteAbs . '/images/logo.png';
 
         <nav class="header-nav-wrap navbar navbar-expand-lg p-0">
             <div class="header-topbar">
-                <a class="header-linkedin" href="https://www.linkedin.com/company/western-forge-&amp;-flange/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                    <img src="<?php echo $baseUrl; ?>/images/linkedin.svg" alt="LinkedIn">
-                </a>
+               
                 <button class="navbar-toggler" type="button" id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -133,11 +131,9 @@ $ogLogo = $siteAbs . '/images/logo.png';
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'careers.php', 'company-directory.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle<?php echo in_array($currentPage, ['about.php', 'forging-101.php'], true) ? ' active' : ''; ?>" href="<?php echo $baseUrl; ?>/about.php" aria-expanded="false">About</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item dropdown-heading" href="<?php echo $baseUrl; ?>/about.php">About</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/careers.php">Careers</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/company-directory.php">Company Directory</a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>/forging-101.php">Forging 101</a></li>
                         </ul>
                     </li>

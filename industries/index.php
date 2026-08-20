@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Industries We Serve | Western Forge & Flange';
+$pageTitle = 'Industries We Serve | STELVERA FORGE';
+$pageDescription = 'Forged flanges and engineered components for oil & gas, petrochemical, LNG, power generation, marine and other critical industries.';
 $isIndustriesListing = true;
 include dirname(__DIR__) . '/header.php';
 $h = static function ($value) {

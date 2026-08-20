@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Quality and Certifications | Western Forge & Flange';
+$pageTitle = 'Quality & Certifications | STELVERA FORGE';
+$pageDescription = 'Discover STELVERA FORGE quality standards, inspection processes, material traceability and certifications for forged industrial components.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -7,9 +8,9 @@ include __DIR__ . '/header.php';
     <div class="page-hero-overlay"></div>
     <div class="container">
         <div class="page-hero-content">
-            <h1>Quality Management and Certifications</h1>
-            <p>Certified forging excellence, backed by testing, safety, and traceability.</p>
-            <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/contact.php">Request Document</a>
+            <h1>Quality</h1>
+            <p>Quality Built Into Every Process.</p>
+            <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
         </div>
     </div>
 </section>
@@ -20,13 +21,17 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-copy forging-flange-copy">
                     <h2>Quality</h2>
-                    <p>With over 75 years of forging and manufacturing experience, Western Forge &amp; Flange has developed one of the most efficient Quality management system in today’s forge and flange industry. Our Quality team consists of a Quality Director, Metallurgist, Quality Assurance Technicians, Quality Control Inspectors, Nondestructive Testing inspectors, and final Inspectors, who work day in and day out to ensure the integrity and quality of our products. Our manufacturing processes are designed around the operational excellence of our people, pragmatic systems and preventative and continual improvement.</p>
+                    <p class="section-kicker">Quality Built Into Every Process.</p>
+                    <p>At STELVERA FORGE S.p.A., quality is integrated throughout the manufacturing process — from material verification and forging to machining, testing and final inspection.</p>
+                    <p>Our quality system focuses on material integrity, dimensional accuracy, full traceability and consistent compliance with applicable international standards and customer specifications.</p>
+                    <p>Through controlled processes, qualified inspection and continuous improvement, we ensure every forged component meets the required level of performance, reliability and quality.</p>
+                    <p class="section-tagline">Precision Controlled. Quality Assured.</p>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/quality-forge.jpg" alt="Hot forging at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/quality-forge.jpg" alt="Quality manufacturing at STELVERA FORGE S.p.A.">
                 </div>
             </div>
         </div>
@@ -35,57 +40,25 @@ include __DIR__ . '/header.php';
 
 <section class="quality-standards">
     <div class="container">
-        <h2>Western Forge &amp; Flanges’ Quality Management system complies with the following standards:</h2>
+        <h2>Quality Standards</h2>
+        <p class="quality-standards-lead">STELVERA FORGE S.p.A. operates under an ISO-certified Quality Management System focused on consistent manufacturing, traceability and continual improvement.</p>
+        <p class="quality-standards-lead">Our quality approach includes:</p>
         <ul class="quality-standards-list">
-            <li>ISO 9001:2015 Standard</li>
-            <li>PED 2014/68/EU, Annex I, Section 4.3</li>
-            <li>PER Schedule 1A and Schedule 2 Part 4-31 (6) (7) (8)</li>
-            <li>NCA3800/4200 ASME SECTION-III (Nuclear)</li>
-            <li>NQA-1 (Nuclear)</li>
-            <li>CSA N285.0 (Canadian Nuclear)</li>
-            <li>CSA B51 (Canadian Non-Nuclear)</li>
-            <li>MIL-I-45208A (Military Standard)</li>
-            <li>10CFR50 APP-B (Code for Federal Regulation – Nuclear)</li>
-            <li>10CFR21 (NRC Regulation)</li>
-            <li>DFARS regulatory and statutory requirements</li>
-            <li>ITAR</li>
-            <li>CFSI</li>
+            <li>ISO Quality Management System</li>
+            <li>Material Identification &amp; Traceability</li>
+            <li>Incoming Material Inspection</li>
+            <li>Dimensional &amp; Visual Inspection</li>
+            <li>Mechanical &amp; Chemical Verification</li>
+            <li>Non-Destructive Testing, where required</li>
+            <li>Heat Treatment Control</li>
+            <li>Inspection &amp; Test Documentation</li>
+            <li>Calibration of Measuring Equipment</li>
+            <li>Final Inspection &amp; Release</li>
+            <li>Customer-Specific Quality Requirements</li>
+            <li>Continuous Process Improvement</li>
         </ul>
-        <div class="quality-standards-cta">
-            <a class="btn-hero btn-hero-primary" href="#certificates">View Certifications</a>
-        </div>
-    </div>
-</section>
-
-<section class="quality-certs" id="certificates">
-    <div class="container">
-        <h2>Compliance Certificates</h2>
-        <div class="row quality-certs-grid">
-            <?php
-            $certificates = [
-                ['title' => 'ISO 9001 2015', 'file' => 'ISO-9001_2015.pdf'],
-                ['title' => 'PED Certificate', 'file' => 'PED-Certificate.pdf'],
-                ['title' => 'PER Certificate', 'file' => 'PER-Certificate.pdf'],
-                ['title' => 'TSSA Certificate (Nuclear)', 'file' => 'TSSA-Certificate-Nuclear.pdf'],
-                ['title' => 'TSSA Certificate (Non-Nuclear)', 'file' => 'TSSA-Certificate-Non-Nuclear.pdf'],
-            ];
-            $certIcon = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="9" r="5.25" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="9" r="2.4" stroke="#fff" stroke-width="1.8"/><path d="M9.2 13.8 7.5 21l4.5-2.4L16.5 21l-1.7-7.2" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>';
-            foreach ($certificates as $cert):
-            ?>
-            <div class="col-md-6 col-lg-4">
-                <div class="quality-cert-card">
-                    <span class="quality-cert-icon"><?php echo $certIcon; ?></span>
-                    <h3><?php echo htmlspecialchars($cert['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
-                    <a class="quality-cert-download" href="<?php echo $baseUrl; ?>/certificates/<?php echo htmlspecialchars($cert['file'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer">Download</a>
-                </div>
-            </div>
-            <?php endforeach; ?>
-            <div class="col-md-6 col-lg-4">
-                <div class="quality-cert-card quality-cert-card-cta">
-                    <a class="btn-hero btn-hero-primary btn-hero-ne" href="<?php echo wf_products_listing_url($baseUrl); ?>">View Products</a>
-                </div>
-            </div>
-        </div>
+        <p class="quality-standards-lead">Products can be manufactured and inspected in accordance with applicable ASTM, ASME, EN and customer/project specifications.</p>
+        <p class="section-tagline quality-standards-tagline">Controlled Processes. Documented Quality. Reliable Performance.</p>
     </div>
 </section>
 
@@ -95,8 +68,19 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-copy forging-flange-copy">
                     <h2>Quality Policy</h2>
-                    <p>Western Forge will maintain its distinction in providing world class “Quality Forging Solutions” with its unique capabilities and quality standards maintained for decades.</p>
-                    <p>Western Forge regards it as its duty to manufacture products in the most economically viable way that meets or exceeds the requirement and expectations of our customers. Western Forge’s management is committed to put constant effort to improve the organization, the quality of the products and the working environment.</p>
+                    <p class="section-kicker">Committed to Quality. Driven by Continuous Improvement.</p>
+                    <p>STELVERA FORGE S.p.A. is committed to manufacturing reliable, high-quality forged products that consistently meet customer requirements, applicable standards and agreed specifications.</p>
+                    <p>Our Quality Policy is built around:</p>
+                    <ul class="trust-list">
+                        <li>Consistent product quality and manufacturing control</li>
+                        <li>Customer satisfaction and reliable service</li>
+                        <li>Compliance with applicable requirements</li>
+                        <li>Continuous improvement of processes and performance</li>
+                        <li>Development of our people and manufacturing capabilities</li>
+                        <li>Efficient and responsible use of resources</li>
+                    </ul>
+                    <p>We continuously strengthen our quality systems, manufacturing processes and working practices to deliver dependable forged solutions for demanding industrial applications.</p>
+                    <p class="section-tagline">Quality in Every Process. Confidence in Every Product.</p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -145,7 +129,11 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="qc-testing-intro">
             <h2>Testing</h2>
-            <p>Western Forge &amp; Flange can accomplish any type of testing as per specification and/or customer specific requirements. Western uses ISO 9001 &amp; ISO 17025 accredited and approved laboratories, whom we audit every year. Our Metallurgist analyzes the results to ensure that our parts meet or exceed all requirements.</p>
+            <p>STELVERA FORGE S.p.A. provides testing in accordance with applicable material
+specifications, international standards and customer-specific requirements.
+Testing may include chemical analysis, mechanical testing, hardness testing, impact
+testing, PMI and non-destructive examination (NDE), as required by the product or
+project specification.</p>
         </div>
         <div class="row g-5">
             <div class="col-lg-6">
@@ -200,14 +188,17 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/conflict-minerals.jpg" alt="Western Forge &amp; Flange manufacturing floor">
+                    <img src="<?php echo $baseUrl; ?>/images/conflict-minerals.jpg" alt="Responsible manufacturing at STELVERA FORGE S.p.A.">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="about-who-copy forging-flange-copy">
                     <h2>Conflict Minerals Policy</h2>
-                    <p>Western Forge &amp; Flange is committed to ensuring the safety and protection of people worldwide. We support ending the violence and human rights violations in the mining of certain minerals from a location described as the “Conflict Region.”</p>
-                    <p>The definition of “conflict minerals” refers to gold, as well as tin, tantalum, and tungsten, regardless of where they are sourced, processed or sold. The U.S. Secretary of State may designate other minerals in the future. The U.S. Securities and Exchange Commission adopted final rules to implement reporting and disclosure requirements related to “conflict minerals,” as directed by the Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010. We support these requirements to further the humanitarian goal of ending violent conflict in designated regions, which has been partially financed by the exploitation and trade of “conflict minerals”.</p>
+                    <p class="section-kicker">Responsible Sourcing. Ethical Supply Chain.</p>
+                    <p>STELVERA FORGE S.p.A. is committed to responsible and ethical sourcing practices throughout its supply chain and supports international efforts to prevent the trade of minerals associated with conflict, human rights violations and unlawful practices.</p>
+                    <p>We recognize tin, tantalum, tungsten and gold (3TG) as conflict minerals and encourage our suppliers to maintain responsible sourcing practices and appropriate supply-chain transparency.</p>
+                    <p>Where applicable, STELVERA FORGE S.p.A. works with its suppliers to obtain relevant material and sourcing information in support of customer and regulatory requirements.</p>
+                    <p>Our objective is to promote a supply chain founded on integrity, transparency and responsible business practices.</p>
                 </div>
             </div>
         </div>
@@ -215,14 +206,17 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-copy">
                     <h3>Our Commitment</h3>
+                    <p>STELVERA FORGE S.p.A. is committed to maintaining a responsible, transparent and ethical supply chain.</p>
                     <ol class="conflict-minerals-list">
-                        <li>Support the aims and objectives of the U.S. legislation on the supply of “conflict minerals”.</li>
-                        <li>Do not knowingly procure specified materials that originate in the “conflict region”.</li>
-                        <li>Ensure compliance with these requirements and ask our suppliers to undertake reasonable due diligence with their supply chains to assure that specified metals are not being sourced from conflict regions.</li>
-                        <li>If we discover the use of these minerals in products we sell to be “non-conflict free”, in any material, parts or components we procure, we will take appropriate actions to transition products to be “conflict free”.</li>
+                        <li>Support internationally recognized principles for the responsible sourcing of tin, tantalum, tungsten and gold (3TG).</li>
+                        <li>Avoid knowingly sourcing materials associated with conflict, human rights abuses or unlawful practices.</li>
+                        <li>Encourage suppliers to conduct appropriate due diligence within their supply chains and provide relevant sourcing information when required.</li>
+                        <li>Review identified sourcing concerns and take appropriate corrective action where necessary.</li>
+                        <li>Continuously promote responsible procurement and supply-chain transparency.</li>
                     </ol>
-                    <p>If you need a copy of Western CMRT, please email: <a href="mailto:quality@western-forge.com">quality@western-forge.com</a></p>
-                    <p>Sincerely,<br>Director of Quality</p>
+                    <p>Where a sourcing risk is identified, STELVERA FORGE S.p.A. will work with the relevant supplier to evaluate the issue and take appropriate measures in accordance with applicable requirements.</p>
+                    <p>For Conflict Minerals Reporting Template (CMRT) information or related documentation, please <a href="<?php echo $baseUrl; ?>/contact.php">contact our Quality Department</a>.</p>
+                    <p>Quality Department<br>STELVERA FORGE S.p.A.</p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -230,52 +224,6 @@ include __DIR__ . '/header.php';
                     <img src="<?php echo $baseUrl; ?>/images/rmi-logo.jpg" alt="Responsible Minerals Initiative">
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="mfr-list">
-    <div class="container">
-        <p class="mfr-list-kicker">Approved</p>
-        <h2>Manufacturer List</h2>
-    </div>
-    <div class="mfr-slider" aria-label="Approved manufacturer logos">
-        <div class="mfr-track">
-            <?php
-            $manufacturers = [
-                ['file' => 'exxon.png', 'name' => 'ExxonMobil'],
-                ['file' => 'shell.png', 'name' => 'Shell'],
-                ['file' => 'marathon.png', 'name' => 'Marathon'],
-                ['file' => 'valero.png', 'name' => 'Valero'],
-                ['file' => 'phillips66.png', 'name' => 'Phillips 66'],
-                ['file' => 'chevron.png', 'name' => 'Chevron'],
-                ['file' => 'flinthills.png', 'name' => 'Flint Hills'],
-                ['file' => 'tesoro.png', 'name' => 'Tesoro'],
-                ['file' => 'sasol.png', 'name' => 'Sasol'],
-                ['file' => 'cbi.png', 'name' => 'CBI'],
-                ['file' => 'bp.png', 'name' => 'bp'],
-                ['file' => 'cimarex.png', 'name' => 'Cimarex'],
-                ['file' => 'citgo.png', 'name' => 'CITGO'],
-                ['file' => 'epic.png', 'name' => 'EPIC Piping'],
-                ['file' => 'invista.png', 'name' => 'INVISTA'],
-                ['file' => 'kbr.png', 'name' => 'KBR'],
-                ['file' => 'koch.png', 'name' => 'Koch'],
-                ['file' => 'cameron.png', 'name' => 'Cameron'],
-                ['file' => 'kiewit.png', 'name' => 'Kiewit'],
-                ['file' => 'axiall.png', 'name' => 'Axiall'],
-                ['file' => 'thai.png', 'name' => 'Thai'],
-                ['file' => 'total.png', 'name' => 'Total'],
-            ];
-            for ($loop = 0; $loop < 2; $loop++):
-                foreach ($manufacturers as $mfr):
-            ?>
-            <div class="mfr-slide">
-                <img src="<?php echo $baseUrl; ?>/images/mfr/<?php echo htmlspecialchars($mfr['file'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($mfr['name'], ENT_QUOTES, 'UTF-8'); ?>">
-            </div>
-            <?php
-                endforeach;
-            endfor;
-            ?>
         </div>
     </div>
 </section>
@@ -336,7 +284,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="cta-box">
                     <h2>Ready To Get Started?</h2>
-                    <p>Once you reach out to Western Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
+                    <p>Once you reach out to STELVERA FORGE S.p.A., you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Forging 101 | Western Forge & Flange';
+$pageTitle = 'Technical Resources | STELVERA FORGE';
+$pageDescription = 'Access technical information on flange standards, materials, dimensions, pressure classes and forged components for industrial applications.';
 include __DIR__ . '/header.php';
 ?>
 

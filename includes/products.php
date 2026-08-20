@@ -62,7 +62,7 @@ function wf_products()
             'hero_title' => 'Weld Neck',
             'heading' => 'Weld Neck Flanges',
             'spec_title' => 'Weld Neck Flange',
-            'page_title' => 'Weld-Neck Flanges | Western Forge & Flange',
+            'page_title' => 'Weld-Neck Flanges | STELVERA FORGE',
             'image' => 'weld-neck.png',
             'paragraphs' => [
                 'Also known as a high-hub flange or a tapered hub flange, weld-neck flanges are designed to be joined to a piping system by butt-welding. Weld Neck flanges are preferred when piping is subject to high stresses, high-pressures or subzero/elevated temperatures. The neck, or hub, helps to transmit environmental stress at the flange with the pipe to which it is welded to. The gradual transition of thickness from the base of the hub to the wall thickness at the butt weld provides important reinforcement of the flange. Turbulence and erosion are reduced due to the matching bore size of the pipe and flange. These flanges are bored to match the ID of the mating pipe so there is no restriction of flow.',
@@ -78,7 +78,7 @@ function wf_products()
             'hero_title' => 'Slip-On',
             'heading' => 'Slip-On Flanges',
             'spec_title' => 'Slip-On Flange',
-            'page_title' => 'Slip-On Flanges | Western Forge & Flange',
+            'page_title' => 'Slip-On Flanges | STELVERA FORGE',
             'image' => 'slip-on.png',
             'paragraphs' => [
                 'Are slipped over the pipe and then welded from both inside and outside to provide sufficient strength and prevent leakage. This flange is used instead of weld necks by many users because of its lower cost and also the fact that it requires less accuracy when cutting pipe to length. Slip-Ons are not normally used in high-stress applications due to low hub and weld attachment.',
@@ -95,7 +95,7 @@ function wf_products()
             'hero_title' => 'Blind',
             'heading' => 'Blind Flanges',
             'spec_title' => 'Blind Flange',
-            'page_title' => 'Blind Flanges | Western Forge & Flange',
+            'page_title' => 'Blind Flanges | STELVERA FORGE',
             'image' => 'blind.png',
             'paragraphs' => [
                 'Blind Flanges do not have a bore and are used to shut off a piping system or vessel opening. Its design permits easy access to vessel or piping system for inspection purposes. It can be supplied with or without hubs at the manufacturer’s option. In terms of internal pressure and bolt loading, blind flanges, especially in the larger sizes, are the most highly stressed flange types.',
@@ -111,7 +111,7 @@ function wf_products()
             'hero_title' => 'Socket Weld',
             'heading' => 'Socket Weld Flanges',
             'spec_title' => 'Socket Weld Flange',
-            'page_title' => 'Socket-Weld Flanges | Western Forge & Flange',
+            'page_title' => 'Socket-Weld Flanges | STELVERA FORGE',
             'image' => 'socket-weld.png',
             'paragraphs' => [
                 'Similar to a slip-on flange in design, but with a bore that is counter-bored to accept pipe. The diameter of the remaining bore is the same as the inside diameter of the pipe. A fillet weld around the hub of the flange attaches the flange to the pipe. An optional internal weld may be applied in high stress applications. Its biggest use is in high pressure systems such as hydraulic and steam lines.',
@@ -128,7 +128,7 @@ function wf_products()
             'hero_title' => 'Threaded',
             'heading' => 'Threaded Flanges',
             'spec_title' => 'Threaded Flange',
-            'page_title' => 'Threaded Flanges | Western Forge & Flange',
+            'page_title' => 'Threaded Flanges | STELVERA FORGE',
             'image' => 'threaded.png',
             'paragraphs' => [
                 'Used for special circumstances with their main advantage being that they can be attached to the pipe without welding. Sometimes a seal weld is also used in conjunction with the threaded connection. Although available in most sizes and pressure rating, threaded flanges today are used almost exclusively in smaller pipe sizes. Threaded flanges are not suitable for piping with thin wall thicknesses because cutting a thread on the pipe is not possible.',
@@ -145,7 +145,7 @@ function wf_products()
             'hero_title' => 'Lap Joint',
             'heading' => 'Lap Joint Flanges',
             'spec_title' => 'Lap Joint Flange',
-            'page_title' => 'Lap Joint Flanges | Western Forge & Flange',
+            'page_title' => 'Lap Joint Flanges | STELVERA FORGE',
             'image' => 'lap-joint.png',
             'paragraphs' => [
                 'Nearly identical to a slip-on flange, but having a radius at the intersection of the bore and the flange face to accommodate a lap stub end. These flanges slip over the pipe and are not otherwise welded or fastened to it. Bolting pressure is transmitted to the gasket by the pressure of the flange against the back of the pipe lap (stub-end). The face on the stub-end forms the gasket face of the flange. Lap-Joint flanges do not have raised faces and a single connection requires both lap-joint flange and a pipe stub-end. They are best used where sections of piping systems need to be dismantled quickly and easily for inspection or replacement.',
@@ -162,7 +162,7 @@ function wf_products()
             'hero_title' => 'Stub End',
             'heading' => 'Stub Ends',
             'spec_title' => 'Stub End',
-            'page_title' => 'Stub-End Flanges | Western Forge & Flange',
+            'page_title' => 'Stub-End Flanges | STELVERA FORGE',
             'image' => 'stub-end.png',
             'paragraphs' => [
                 'Lap joint stub ends are fittings used in place of welded flanges where rotating back up flanges are required or to minimize the weight of high-grade materials. The lap joint flange can be rotated on the pipe and simplify the alignment of the bolt holes of the mating flanges. Stub Ends typically come in two design categories; ASA B16.9 or MSS SP-43. These are often referred to as “long pattern” (ASA) or “short pattern” (MSS). The most requested design at Western Forge & Flange is typically the short pattern MSS style.',
@@ -179,7 +179,7 @@ function wf_products()
             'hero_title' => 'Studding Outlet',
             'heading' => 'Studding Outlet Flanges',
             'spec_title' => 'Studding Outlet Flange',
-            'page_title' => 'Studding Outlet Flanges | Western Forge & Flange',
+            'page_title' => 'Studding Outlet Flanges | STELVERA FORGE',
             'image' => 'studding-outlet.png',
             'paragraphs' => [
                 'Studding Outlet Flanges are usually designed to be installed in the inside or outside of vessels and tanks. These are made to order items offered in a variety of configurations. The most commonly used studding outlet flange in the industry is the flat bottom type. We also offer them in a head mount in order to set the flanges flush with your vessel.',
@@ -196,7 +196,7 @@ function wf_products()
             'hero_title' => 'Long Weld Neck',
             'heading' => 'Long Weld Neck Flanges',
             'spec_title' => 'Long Weld Neck Flange',
-            'page_title' => 'Long Weld Neck Flanges | Western Forge & Flange',
+            'page_title' => 'Long Weld Neck Flanges | STELVERA FORGE',
             'image' => 'long-weld-neck.png',
             'paragraphs' => [
                 'Long weld necks are similar to weld neck flanges, with the exception that the neck is lengthened and acts like a boring extension. Long weld neck flanges are generally used on vessels, columns or barrels. In critical applications where working temperature, mechanical stress, and corrosion factors are elevated, heavy barrel (HB) and equal barrel (E) types might be utilized for their thicker barrels and increased support capacity.',
@@ -213,7 +213,7 @@ function wf_products()
             'hero_title' => 'Orifice Set',
             'heading' => 'Orifice Flange Sets',
             'spec_title' => 'Orifice Flange',
-            'page_title' => 'Orifice Set Flanges | Western Forge & Flange',
+            'page_title' => 'Orifice Set Flanges | STELVERA FORGE',
             'image' => 'orifice-set.png',
             'paragraphs' => [
                 'Orifice Flanges are used with orifice meters for the purpose of measuring the flow rate of either liquids or gases in the respective pipeline. Pairs of pressure “Tappings”, mostly on 2 sides, directly opposite each other, are machined into the orifice flange. This makes separate orifice carriers or tappings in the pipe wall unnecessary.',
@@ -231,7 +231,7 @@ function wf_products()
             'hero_title' => 'Other Flanges',
             'heading' => 'Other Flanges and Non-Standard Products',
             'spec_title' => 'Non-Standard Products',
-            'page_title' => 'Other Flanges & Non-Standard Products | Western Forge & Flange',
+            'page_title' => 'Other Flanges & Non-Standard Products | STELVERA FORGE',
             'image' => 'other-flanges.png',
             'paragraphs' => [
                 'Western Forge & Flange manufactures specialized and non-standard flanges to drawing, including military and international specifications. Tell us the facing, size, and alloy you need and we will forge it to spec.',

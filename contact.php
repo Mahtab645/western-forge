@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Contact Us | Western Forge & Flange';
+$pageTitle = 'Contact Us | STELVERA FORGE';
+$pageDescription = 'Contact STELVERA FORGE S.p.A. for forged flanges, custom forgings, technical support and project quotations.';
 
 $inquiryTypes = [
     'General Inquiry',

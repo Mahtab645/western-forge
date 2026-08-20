@@ -17,7 +17,8 @@ $industry = wf_get_industry($slug);
 
 if (!$industry) {
     http_response_code(404);
-    $pageTitle = 'Industry Not Found | Western Forge & Flange';
+    $pageTitle = 'Industry Not Found | STELVERA FORGE';
+    $pageDescription = 'The requested industry was not found. Explore the critical industries served by STELVERA FORGE.';
     include __DIR__ . '/header.php';
     ?>
     <section class="product-missing">
@@ -34,6 +35,9 @@ if (!$industry) {
 }
 
 $pageTitle = $industry['page_title'];
+$pageDescription = trim((string) ($industry['hero_subtitle'] ?? '')) !== ''
+    ? $industry['hero_subtitle']
+    : ('Forged flanges and engineered components for ' . $industry['card'] . ' from STELVERA FORGE S.p.A.');
 include __DIR__ . '/header.php';
 
 $h = static function ($value) {

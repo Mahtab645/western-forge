@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Products | Western Forge & Flange';
+$pageTitle = 'Forged Flanges & Products | STELVERA FORGE';
+$pageDescription = 'Explore forged flanges and engineered components manufactured for demanding oil & gas, petrochemical, power, marine and industrial applications.';
 $isProductsListing = true;
 include dirname(__DIR__) . '/header.php';
 $h = static function ($value) {

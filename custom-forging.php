@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Custom Forging | Western Forge & Flange';
+$pageTitle = 'Custom Forging Manufacturer | STELVERA FORGE';
+$pageDescription = 'Custom forged blocks, rings, bars, discs and engineered components manufactured in a wide range of materials to customer specifications.';
 include __DIR__ . '/header.php';
 ?>
 

@@ -16,7 +16,8 @@ $product = wf_get_product($slug);
 
 if (!$product) {
     http_response_code(404);
-    $pageTitle = 'Product Not Found | Western Forge & Flange';
+    $pageTitle = 'Product Not Found | STELVERA FORGE';
+    $pageDescription = 'The requested product was not found. Explore STELVERA FORGE forged flanges and engineered components.';
     include __DIR__ . '/header.php';
     ?>
     <section class="product-missing">
@@ -33,6 +34,7 @@ if (!$product) {
 }
 
 $pageTitle = $product['page_title'];
+$pageDescription = $product['heading'] . ' from STELVERA FORGE S.p.A. — forged flanges and engineered components manufactured for demanding industrial applications.';
 include __DIR__ . '/header.php';
 
 $h = static function ($value) {
