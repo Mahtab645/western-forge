@@ -14,8 +14,8 @@ $h = static function ($value) {
         <div class="row align-items-end g-4 products-hero-row">
             <div class="col-lg-6">
                 <div class="products-hero-copy">
-                    <h1>Explore Our Flanges and Forgings</h1>
-                    <p>Premium forged flanges and specials, delivered fast with a focus on quality.</p>
+                    <h1>Quality Forged Products</h1>
+                    <p>Engineered Quality. Reliable Performance.</p>
                     <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
                 </div>
             </div>
@@ -32,11 +32,39 @@ $h = static function ($value) {
     <div class="container">
         <div class="products-listing-intro">
             <h2>Quality Forged Products</h2>
-            <p>Western Forge &amp; Flange has spent over 80 years providing high-quality forged flanges and custom components to demanding clients in heavily regulated industries, including petrochemical and nuclear power generation, as well as national defense. We maintain a large inventory of over 80 premium and exotic U.S.-sourced alloys, enabling us to deliver fast turnaround times, and are certified to ISO 9001:2015. We adhere to numerous civilian and military standards, including holding nuclear certification.</p>
+            <p class="section-kicker">Engineered Quality. Reliable Performance.</p>
+            <p>STELVERA FORGE S.p.A. manufactures high-integrity forged flanges and custom components for demanding applications across the oil &amp; gas, petrochemical, LNG, power, marine and process industries.</p>
+            <p>Our manufacturing approach combines carefully selected materials, controlled forging, precision machining and rigorous inspection to ensure consistent quality and full material traceability.</p>
+            <p>With capabilities across carbon, alloy, stainless, duplex and special steels, we deliver standard and custom-engineered products in accordance with applicable ASTM, ASME, EN and customer specifications.</p>
+            <p class="section-tagline">Precision Forged. Quality Assured.</p>
         </div>
 
         <div class="row g-4 product-card-grid">
-            <?php foreach (wf_products() as $item): ?>
+            <?php
+            $listingSlugs = [
+                'weld-neck-flanges',
+                'slip-on-flanges',
+                'blind-flanges',
+                'socket-weld-flanges',
+                'lap-joint-flanges',
+                'threaded-flanges',
+                'stub-end-flanges',
+                'studding-outlet-flanges',
+                'long-weld-neck-flanges',
+                'orifice-set-flanges',
+                'other-flanges',
+            ];
+            $allProducts = wf_products();
+            $listingLabels = [
+                'orifice-set-flanges' => 'Orifice Sets',
+            ];
+            foreach ($listingSlugs as $slug):
+                $item = $allProducts[$slug] ?? null;
+                if (!$item) {
+                    continue;
+                }
+                $cardLabel = $listingLabels[$slug] ?? $item['heading'];
+            ?>
             <div class="col-md-6 col-lg-4">
                 <a class="product-card" href="<?php echo wf_product_url($item['slug'], $baseUrl); ?>">
                     <span class="product-card-arrow" aria-hidden="true">
@@ -45,8 +73,8 @@ $h = static function ($value) {
                         </svg>
                     </span>
                     <div class="product-card-inner">
-                        <img src="<?php echo $h(wf_product_image($item['image'], $baseUrl)); ?>" alt="<?php echo $h($item['heading']); ?>">
-                        <h4><?php echo $h($item['heading']); ?></h4>
+                        <img src="<?php echo $h(wf_product_image($item['image'], $baseUrl)); ?>" alt="<?php echo $h($cardLabel); ?>">
+                        <h4><?php echo $h($cardLabel); ?></h4>
                     </div>
                 </a>
             </div>
@@ -60,19 +88,22 @@ $h = static function ($value) {
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <h2>Why Our Products Stand Out</h2>
-                <p class="trust-lead">Why do companies in the most demanding industries choose Western Forge &amp; Flange to provide their flanges and other key forged components?</p>
-                <h3>Here are some reasons:</h3>
+                <p class="section-kicker">Precision, Quality &amp; Engineering You Can Rely On</p>
+                <p class="trust-lead">STELVERA FORGE S.p.A. combines modern manufacturing expertise with rigorous quality control to deliver forged products for demanding industrial applications.</p>
+                <h3>What sets us apart:</h3>
                 <ul class="trust-list">
-                    <li>Fast emergency turnaround times for quotes and delivery of finished products.</li>
-                    <li>A wide array of premium stainless and exotic alloys with U.S. melt sourcing.</li>
-                    <li>Compliance with ISO 9001:2015, as well as PED, PER, CRN, nuclear, and military certifications.</li>
-                    <li>An 80+ year history of proven reliability in the petrochemical, nuclear, marine, military, and power generation markets.</li>
+                    <li><strong>Precision Manufacturing</strong> Engineered for dimensional accuracy and consistent performance.</li>
+                    <li><strong>Material Expertise</strong> Carbon, alloy, stainless, duplex and special steel grades.</li>
+                    <li><strong>Quality Control</strong> Controlled inspection and complete material traceability.</li>
+                    <li><strong>International Standards</strong> Manufacturing in accordance with applicable ASTM, ASME, EN and project specifications.</li>
+                    <li><strong>Custom Capability</strong> Special flanges and forgings manufactured to customer drawings.</li>
+                    <li><strong>Reliable Support</strong> Responsive service from enquiry through production and delivery.</li>
                 </ul>
             </div>
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/quality-forge.jpg" alt="Forging production at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/quality-forge.jpg" alt="Forging production at STELVERA FORGE S.p.A.">
                 </div>
             </div>
         </div>
@@ -85,34 +116,10 @@ $h = static function ($value) {
     </div>
     <div class="split-cta-copy">
         <h2>Need Custom Forging?</h2>
-        <p>Western Forge &amp; Flange is capable of producing custom forged components in a variety of forms and premium or exotic alloys, based on drawings or other specifications. This includes prototypes and special designs for demanding roles, such as aerospace applications.</p>
-        <a class="btn-view-products" href="<?php echo $baseUrl; ?>/custom-forging.php">Learn About Custom Forging</a>
-    </div>
-</section>
-
-<section class="quality-standards">
-    <div class="container">
-        <h2>Backed by Quality Standards</h2>
-        <p class="products-quality-lead">When you work with Western Forge &amp; Flange, you’re receiving service backed by numerous industry certifications. Our rigorous, internally led quality program and compliance efforts shape everything we do. By meeting these standards, we’ve become a reliable and trusted supplier across sectors and functions.</p>
-        <p class="products-quality-sub">Our quality management system complies with:</p>
-        <ul class="quality-standards-list">
-            <li>ISO 9001:2015 Standard</li>
-            <li>PED 2014/68/EU, Annex I, Section 4.3</li>
-            <li>PER Schedule 1A and Schedule 2 Part 4-31 (6) (7) (8)</li>
-            <li>NCA3800/4200 ASME SECTION-III (Nuclear)</li>
-            <li>NQA-1 (Nuclear)</li>
-            <li>CSA N285.0 (Canadian Nuclear)</li>
-            <li>CSA B51 (Canadian Non-Nuclear)</li>
-            <li>MIL-I-45208A (Military Standard)</li>
-            <li>10CFR50 APP-B (Code for Federal Regulation – Nuclear)</li>
-            <li>10CFR21 (NRC Regulation)</li>
-            <li>DFARS regulatory and statutory requirements</li>
-            <li>ITAR</li>
-            <li>CFSI</li>
-        </ul>
-        <div class="quality-standards-cta">
-            <a class="btn-hero btn-hero-primary" href="<?php echo $baseUrl; ?>/quality-certifications.php">View Certifications</a>
-        </div>
+        <p class="section-kicker">Your Design. Our Forging Expertise.</p>
+        <p>STELVERA FORGE S.p.A. manufactures custom forged components in a wide range of materials, shapes and dimensions, engineered to customer drawings and project specifications.</p>
+        <p>From special flanges to rings, blocks, discs and engineered forgings, we deliver solutions for demanding industrial applications.</p>
+        <a class="btn-view-products" href="<?php echo $baseUrl; ?>/custom-forging.php">Explore Custom Forging</a>
     </div>
 </section>
 
@@ -122,7 +129,7 @@ $h = static function ($value) {
             <div class="col-lg-6">
                 <div class="cta-box">
                     <h2>Request a Quote</h2>
-                    <p>If you’re ready to launch your next project with forged flanges or custom products from Western Forge &amp; Flange, request a quote today for a fast response and reliable delivery.</p>
+                    <p>If you’re ready to launch your next project with forged flanges or custom products from STELVERA FORGE S.p.A., request a quote today for a fast response and reliable delivery.</p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
                 </div>
             </div>

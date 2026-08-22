@@ -4138,6 +4138,14 @@ a {
   margin: 0;
 }
 
+.products-listing-intro p + p {
+  margin-top: 16px;
+}
+
+.products-listing-intro .section-tagline {
+  margin-top: 20px;
+}
+
 .products-standout {
   background: var(--wf-gray);
 }
@@ -4181,17 +4189,22 @@ a {
 }
 
 .split-cta-copy p {
-  margin: 0 0 28px;
+  margin: 0 0 16px;
   color: var(--wf-white);
   font-size: 18px;
   line-height: 1.7;
   max-width: 560px;
 }
 
+.split-cta-copy .section-kicker {
+  margin: 0 0 16px;
+}
+
 .split-cta-copy .btn-view-products {
   width: auto;
   font-size: 14px;
   padding: 12px 18px;
+  margin-top: 12px;
 }
 
 .split-cta-copy .btn-view-products:hover,
