@@ -3,7 +3,7 @@
         <div class="row g-4 footer-top">
             <div class="col-md-6 col-lg-4">
                 <a class="footer-logo" href="<?php echo $baseUrl; ?>/index.php">
-                    <img src="<?php echo $baseUrl; ?>/images/logo-white.png" alt="Stelvera Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/logo.png" alt="STELVERA FORGE">
                 </a>
                 <ul class="footer-contact">
                     <li>
@@ -73,6 +73,21 @@
         </div>
     </div>
 </footer>
+
+<div class="cookie-consent" id="cookieConsent" role="dialog" aria-modal="false" aria-labelledby="cookieConsentTitle" aria-describedby="cookieConsentText" hidden>
+    <div class="cookie-consent-inner">
+        <div class="cookie-consent-copy">
+            <p class="cookie-consent-title" id="cookieConsentTitle">We use cookies</p>
+            <p class="cookie-consent-text" id="cookieConsentText">
+                We use cookies to improve your experience on our site. You can accept all cookies or cancel.
+            </p>
+        </div>
+        <div class="cookie-consent-actions">
+            <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAccept">Accept All Cookies</button>
+            <button type="button" class="cookie-btn cookie-btn-cancel" id="cookieCancel">Cancel</button>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="<?php echo $baseUrl; ?>/js/custom.js"></script>
