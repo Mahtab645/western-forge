@@ -259,7 +259,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="about-who-copy">
                     <h3>Rough Forgings</h3>
-                    <p>Western Forge &amp; Flange offers rough forgings in a multitude of shapes and sizes for customers to machine into various parts and components outside of flanges. Every rough forging comes with a &ldquo;machining allowance&rdquo; or &ldquo;forging envelope&rdquo; which refers to the amount of stock left on the surface of the forging to be removed by subsequent machining. Depending on the material grade and size of the forging, the envelope will typically range from &frac12;&quot; to 2&quot; (all over) of excess stock to protect the finishing dimensions provided by the customer. One of the main differences between rough forgings and rough machined forgings is that there is not an exact tolerance. As a manufacturer we cannot determine exactly how much overage there will be on the parts, although we try and get as close as possible to the finished dimensions.</p>
+                    <p>Stelvera Forge &amp; Flange offers rough forgings in a multitude of shapes and sizes for customers to machine into various parts and components outside of flanges. Every rough forging comes with a &ldquo;machining allowance&rdquo; or &ldquo;forging envelope&rdquo; which refers to the amount of stock left on the surface of the forging to be removed by subsequent machining. Depending on the material grade and size of the forging, the envelope will typically range from &frac12;&quot; to 2&quot; (all over) of excess stock to protect the finishing dimensions provided by the customer. One of the main differences between rough forgings and rough machined forgings is that there is not an exact tolerance. As a manufacturer we cannot determine exactly how much overage there will be on the parts, although we try and get as close as possible to the finished dimensions.</p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -292,7 +292,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="cta-box">
                     <h2>Ready To Get Started?</h2>
-                    <p>Once you reach out to Western Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
+                    <p>Once you reach out to Stelvera Forge &amp; Flange, you’ll get the products you need in a hurry. Quick quotes and dependable delivery are part of our promise to you.</p>
                     <a class="btn-view-products" href="<?php echo $baseUrl; ?>/contact.php">Request a Quote</a>
                 </div>
             </div>

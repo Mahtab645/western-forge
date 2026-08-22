@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $fromEmail = filter_var($old['email'], FILTER_SANITIZE_EMAIL);
         $encodedName = '=?UTF-8?B?' . base64_encode($fileName) . '?=';
         $headers = [
-            'From: Western Forge Website <noreply@western-forge.com>',
+            'From: Stelvera Forge Website <noreply@western-forge.com>',
             'Reply-To: ' . $fromEmail,
             'X-Mailer: PHP/' . PHP_VERSION,
         ];
@@ -230,7 +230,7 @@ include __DIR__ . '/header.php';
                                 <p class="contact-field-label">Consent</p>
                                 <label class="contact-consent">
                                     <input type="checkbox" name="consent" value="1" <?php echo $old['consent'] !== '' ? 'checked' : ''; ?>>
-                                    <span>I agree to receive future email marketing communications from Western Forge &amp; Flange, including product updates, case studies, and other news.</span>
+                                    <span>I agree to receive future email marketing communications from Stelvera Forge &amp; Flange, including product updates, case studies, and other news.</span>
                                 </label>
                             </div>
                             <div class="col-12">

@@ -87,7 +87,7 @@ $ogLogo = $siteAbs . '/images/logo.png';
 <header class="site-header">
     <div class="container header-inner">
         <a class="header-logo" href="<?php echo $baseUrl; ?>/index.php">
-            <img src="<?php echo $baseUrl; ?>/images/logo.png" alt="Western Forge &amp; Flange">
+            <img src="<?php echo $baseUrl; ?>/images/logo.png" alt="Stelvera Forge &amp; Flange">
         </a>
 
         <nav class="header-nav-wrap navbar navbar-expand-lg p-0">

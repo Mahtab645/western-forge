@@ -3,7 +3,7 @@
         <div class="row g-4 footer-top">
             <div class="col-md-6 col-lg-4">
                 <a class="footer-logo" href="<?php echo $baseUrl; ?>/index.php">
-                    <img src="<?php echo $baseUrl; ?>/images/logo-white.png" alt="Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/logo-white.png" alt="Stelvera Forge &amp; Flange">
                 </a>
                 <ul class="footer-contact">
                     <li>
@@ -69,7 +69,7 @@
         <hr class="footer-rule">
         <div class="footer-bottom">
             <a href="#">Privacy Policy</a>
-            <p>Copyright &copy; <?php echo date('Y'); ?> Western Forge &amp; Flange</p>
+            <p>Copyright &copy; <?php echo date('Y'); ?> Stelvera Forge &amp; Flange</p>
         </div>
     </div>
 </footer>

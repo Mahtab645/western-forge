@@ -84,7 +84,7 @@ $h = static function ($value) {
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/industries/experience.jpg" alt="Western Forge &amp; Flange facility">
+                    <img src="<?php echo $baseUrl; ?>/images/industries/experience.jpg" alt="Stelvera Forge &amp; Flange facility">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -109,7 +109,7 @@ $h = static function ($value) {
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/industries/quality.jpg" alt="Quality testing at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/industries/quality.jpg" alt="Quality testing at Stelvera Forge &amp; Flange">
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@ $h = static function ($value) {
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/industries/why.jpg" alt="Forging press at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/industries/why.jpg" alt="Forging press at Stelvera Forge &amp; Flange">
                 </div>
             </div>
             <div class="col-lg-6">

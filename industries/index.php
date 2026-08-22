@@ -26,7 +26,7 @@ $h = static function ($value) {
     <div class="container">
         <div class="industries-listing-intro">
             <h2>Serving Critical Markets</h2>
-            <p>There’s no industrial application too demanding for Western Forge &amp; Flange. Our single-run and multiple-run flanges and custom forgings are used in chemical plants, power generation facilities, shipyards, and other intensive environments.</p>
+            <p>There’s no industrial application too demanding for Stelvera Forge &amp; Flange. Our single-run and multiple-run flanges and custom forgings are used in chemical plants, power generation facilities, shipyards, and other intensive environments.</p>
             <p>With over 80 years of experience, numerous certifications, and U.S. materials-sourcing and inspection processes, we can guarantee the quality needed for these jobs.</p>
         </div>
 
@@ -49,7 +49,7 @@ $h = static function ($value) {
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <h2>Why Our Customers Trust Us</h2>
-                <p class="trust-lead">Western Forge &amp; Flange is experienced at meeting the most demanding requirements and timelines, with our decades of experience and long list of certifications proving why we’re worthy of our clients’ trust.</p>
+                <p class="trust-lead">Stelvera Forge &amp; Flange is experienced at meeting the most demanding requirements and timelines, with our decades of experience and long list of certifications proving why we’re worthy of our clients’ trust.</p>
                 <h3>We can deliver:</h3>
                 <ul class="trust-list">
                     <li>Emergency high-speed turnarounds, with quotes in minutes and products delivered within five days.</li>
@@ -61,7 +61,7 @@ $h = static function ($value) {
             <div class="col-lg-6">
                 <div class="about-who-media">
                     <span class="about-who-media-accent" aria-hidden="true"></span>
-                    <img src="<?php echo $baseUrl; ?>/images/quality-testing.jpg" alt="Quality testing at Western Forge &amp; Flange">
+                    <img src="<?php echo $baseUrl; ?>/images/quality-testing.jpg" alt="Quality testing at Stelvera Forge &amp; Flange">
                 </div>
             </div>
         </div>
