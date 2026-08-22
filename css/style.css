@@ -4364,6 +4364,10 @@ a {
   color: #3a3d40;
 }
 
+.product-copy .section-kicker {
+  margin: -4px 0 20px;
+}
+
 .product-groups {
   margin-top: 28px;
 }

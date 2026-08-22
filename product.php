@@ -34,7 +34,7 @@ if (!$product) {
 }
 
 $pageTitle = $product['page_title'];
-$pageDescription = $product['heading'] . ' from STELVERA FORGE S.p.A. — forged flanges and engineered components manufactured for demanding industrial applications.';
+$pageDescription = $product['page_description'] ?? ($product['heading'] . ' from STELVERA FORGE S.p.A. — forged flanges and engineered components manufactured for demanding industrial applications.');
 include __DIR__ . '/header.php';
 
 $h = static function ($value) {
@@ -66,6 +66,9 @@ $hasSpecs = !empty($product['dimensions']) || !empty($product['alloys']) || !emp
             <div class="col-lg-6">
                 <div class="product-copy">
                     <h2><?php echo $h($product['heading']); ?></h2>
+                    <?php if (!empty($product['kicker'])): ?>
+                        <p class="section-kicker"><?php echo $h($product['kicker']); ?></p>
+                    <?php endif; ?>
                     <?php foreach ($product['paragraphs'] as $paragraph): ?>
                         <p><?php echo $h($paragraph); ?></p>
                     <?php endforeach; ?>
