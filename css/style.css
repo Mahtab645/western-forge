@@ -2131,13 +2131,17 @@ a {
   margin: 0;
 }
 
+.about-apart-intro p + p {
+  margin-top: 16px;
+}
+
 .about-apart-card {
   background: #f7f7f8;
   padding: 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 18px;
 }
 
 .about-apart-icon {
@@ -2157,11 +2161,24 @@ a {
   display: block;
 }
 
+.about-apart-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--wf-black);
+  line-height: 1.25;
+  margin: 8px 0 0;
+}
+
 .about-apart-card p {
   font-size: 18px;
   line-height: 1.67;
   color: var(--wf-black);
   margin: 0;
+}
+
+.about-apart-tagline {
+  text-align: center;
+  margin: 40px 0 0;
 }
 
 .about-compliance {
@@ -2257,6 +2274,10 @@ a {
   line-height: 1.67;
   margin: 0;
   max-width: 560px;
+}
+
+.about-journey-copy p + p {
+  margin-top: 18px;
 }
 
 .about-journey-media {

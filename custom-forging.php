@@ -209,19 +209,6 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="custom-resources">
-    <div class="container">
-        <div class="row align-items-start custom-resources-row">
-            <div class="col-lg-6">
-                <h2>Helpful Resources and Certifications</h2>
-                <p>Review our quality standards, inspection processes, material grades and technical resources to confirm STELVERA FORGE S.p.A. is the right partner for your next custom forging project.</p>
-            </div>
-            <div class="col-lg-6">
-                <a class="btn-hero btn-long-outline" href="<?php echo $baseUrl; ?>/index.php#resources">See All Resources</a>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="cta-section">
     <div class="container">
